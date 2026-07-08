@@ -410,7 +410,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 <!-- End Meta Pixel -->
 
   <link rel="preload" href="images/team.webp" as="image" type="image/webp">
-  <link rel="icon" type="image/png" href="favicon-thriiv.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta name="robots" content="noindex, nofollow">
 
   <script type="application/ld+json">
@@ -537,7 +537,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo"><img src="images/logo-thriiv.png" alt="thriiv.digital"></a>
+  <a href="https://thriivdigital.com.au/" class="nav-logo"><img src="images/logo-thriiv.png" alt="thriiv.digital"></a>
   <div class="nav-links" id="navLinks">
     <a href="#services" class="nav-link" onclick="closeNav()">What We Do</a>
     <a href="#case-studies" class="nav-link" onclick="closeNav()">Results</a>
@@ -740,7 +740,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       </div>
 
       <!-- Card 3: Kiama Cleaning -->
-      <div class="case-card fade-up fade-up-delay-2" style="--scroll-distance: -1386px;">
+      <div class="case-card fade-up fade-up-delay-2" style="--scroll-distance: -808px;">
         <div class="case-browser-frame">
           <div class="case-browser-inner">
             <div class="case-browser-bar">
@@ -750,7 +750,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
               <span class="browser-url-text">kiamacleaners.com.au</span>
             </div>
             <div class="case-scroll-viewport">
-              <img src="images/scroll-kiama.png" alt="Kiama Cleaning website" class="case-scroll-img" loading="lazy" />
+              <img src="images/kiama-cleaning-full.jpeg" alt="Kiama Cleaning website" class="case-scroll-img" loading="lazy" />
             </div>
           </div>
         </div>
@@ -1173,7 +1173,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 
     <div class="footer-top">
       <div class="footer-brand-col">
-        <a href="#" class="footer-brand-logo"><img src="images/logo-thriiv.png" alt="thriiv.digital"></a>
+        <a href="https://thriivdigital.com.au/" class="footer-brand-logo"><img src="images/logo-thriiv.png" alt="thriiv.digital"></a>
         <p class="footer-brand-tagline">Welcome to the growth engine built to help you thriiv.</p>
       </div>
 
@@ -1250,9 +1250,10 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       <div class="native-form">
         <div id="af-package-note" style="display:none;font-size:13px;font-weight:700;color:var(--teal);background:rgba(0,183,152,0.1);padding:8px 14px;border-radius:8px;"></div>
         <div class="fg"><label>First Name *</label><input type="text" id="af-fname" placeholder="James" /></div>
+        <div class="fg"><label>Business Name *</label><input type="text" id="af-biz" placeholder="Smith Plumbing" /></div>
         <div class="fg"><label>Email Address *</label><input type="email" id="af-email" placeholder="james@smithplumbing.com.au" /></div>
         <div class="fg"><label>Mobile *</label><input type="tel" id="af-phone" placeholder="0400 000 000" /></div>
-        <div class="fg"><label>Website URL *</label><input type="url" id="af-url" placeholder="https://yourwebsite.com.au" /></div>
+        <div class="fg"><label>Website URL</label><input type="url" id="af-url" placeholder="https://yourwebsite.com.au" /></div>
         <div class="fg" id="af-problem-wrap">
           <label>Biggest online problem right now? <span style="font-weight:400;color:var(--text-light)">(optional — select all that apply)</span></label>
           <div class="checkbox-group">
@@ -1288,9 +1289,10 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       <p>No obligation. No sales pressure. We'll be in touch shortly.</p>
       <div class="native-form">
         <div class="fg"><label>First Name *</label><input type="text" id="hc-fname" placeholder="James" /></div>
+        <div class="fg"><label>Business Name *</label><input type="text" id="hc-biz" placeholder="Smith Plumbing" /></div>
         <div class="fg"><label>Email Address *</label><input type="email" id="hc-email" placeholder="james@smithplumbing.com.au" /></div>
         <div class="fg"><label>Mobile *</label><input type="tel" id="hc-phone" placeholder="0400 000 000" /></div>
-        <div class="fg"><label>Website URL</label><input type="url" id="hc-url" placeholder="https://yourwebsite.com.au" /></div>
+        <div class="fg"><label>Website URL *</label><input type="url" id="hc-url" placeholder="https://yourwebsite.com.au" /></div>
         <button class="form-submit-btn" onclick="submitHealthCheck()">Get My Free Health Check →</button>
         <!-- Honeypot — do not remove -->
         <div class="hp-field" aria-hidden="true"><label for="hc-hp">Leave this blank</label><input type="text" id="hc-hp" name="hc-hp" autocomplete="off" tabindex="-1"></div>
@@ -1388,11 +1390,12 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
     // Honeypot check — bail silently if a bot has filled the hidden field
     if (document.getElementById('af-hp').value !== '') { setTimeout(() => { window.location.href = 'thank-you-audit.html'; }, 1500); return; }
     const fname = document.getElementById('af-fname').value.trim();
+    const biz = document.getElementById('af-biz').value.trim();
     const email = document.getElementById('af-email').value.trim();
     const phone = document.getElementById('af-phone').value.trim();
     const url = document.getElementById('af-url').value.trim();
-    if (!fname || !email || !phone || !url) {
-      alert('Please fill in all required fields including your website URL.');
+    if (!fname || !biz || !email || !phone) {
+      alert('Please fill in all required fields.');
       return;
     }
     const btn = document.querySelector('#auditFormWrap .form-submit-btn');
@@ -1403,6 +1406,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 
     const auditPayload = {
       firstName: fname,
+      businessName: biz,
       email: email,
       phone: phone,
       websiteUrl: url,
@@ -1412,7 +1416,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
     };
 
     // Fire both — no waiting, redirect happens on timer
-    fetch('https://formspree.io/f/mqendwqa', {
+    fetch('https://formspree.io/f/xdarvlpd', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(auditPayload),
@@ -1441,11 +1445,12 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
     // Honeypot check — bail silently if a bot has filled the hidden field
     if (document.getElementById('hc-hp').value !== '') { setTimeout(() => { window.location.href = 'thank-you-healthcheck.html'; }, 1500); return; }
     const fname = document.getElementById('hc-fname').value.trim();
+    const biz = document.getElementById('hc-biz').value.trim();
     const email = document.getElementById('hc-email').value.trim();
     const phone = document.getElementById('hc-phone').value.trim();
     const url = document.getElementById('hc-url').value.trim();
-    if (!fname || !email || !phone) {
-      alert('Please fill in your name, email, and mobile number.');
+    if (!fname || !biz || !email || !phone || !url) {
+      alert('Please fill in all required fields including your business name and website URL.');
       return;
     }
     const btn = document.querySelector('#healthCheckFormWrap .form-submit-btn');
@@ -1453,6 +1458,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 
     const healthCheckPayload = {
       firstName: fname,
+      businessName: biz,
       email: email,
       phone: phone,
       websiteUrl: url,
@@ -1460,7 +1466,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
     };
 
     // Fire both — no waiting, redirect happens on timer
-    fetch('https://formspree.io/f/mqendwqa', {
+    fetch('https://formspree.io/f/mlgykwoo', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(healthCheckPayload),
@@ -1507,7 +1513,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       source: 'lp-web-wollongong'
     };
 
-    fetch('https://formspree.io/f/mykodlwe', {
+    fetch('https://formspree.io/f/mykqadbl', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify(qPayload),
