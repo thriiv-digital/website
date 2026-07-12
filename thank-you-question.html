@@ -16,8 +16,8 @@
     'domains': ['go.thriiv.digital', 'calendly.com']
   });
 </script>
-<title>Your Audit Is Underway | thriiv.digital</title>
-<link rel="canonical" href="https://thriivdigital.com.au/thank-you-healthcheck.html">
+<title>Question Received | thriiv.digital</title>
+<link rel="canonical" href="https://thriivdigital.com.au/thank-you-question.html">
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -242,8 +242,8 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 <!-- THANK YOU HERO -->
 <section class="ty-hero">
   <div class="ty-icon"><div class="ty-icon-circle"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div></div>
-  <h1>Thanks for your submission!</h1>
-  <p>Our team is running your audit right now. We're diving into your website, ads, and local SEO to find where you're losing leads. We'll reach out shortly with your custom breakdown.</p>
+  <h1>Thanks for the question!</h1>
+  <p>We've received your question and a member of our local team will get back to you with a helpful answer shortly.</p>
   <div class="ty-actions">
     <a href="index.html#case-studies" class="btn-primary">See Our Client Results →</a>
     <a href="index.html#faq" class="btn-secondary">Read Our FAQs</a>
@@ -481,12 +481,12 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 
     const auditPayload = {
       firstName: fname, businessName: biz, email: email, phone: phone, websiteUrl: url,
-      problem: problems, packageInterest: packageInterest, source: 'thank-you-healthcheck'
+      problem: problems, packageInterest: packageInterest, source: 'thank-you-question'
     };
 
     fetch('https://formspree.io/f/xdarvlpd', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(auditPayload), keepalive: true }).catch(()=>{});
     fetch('https://hook.eu1.make.com/0njfs4y7hacxefcw1dn9prsdeqkbbr2l', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(auditPayload), keepalive: true }).catch(()=>{});
-    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', { content_name: 'Free Website Audit', content_category: 'thank-you-healthcheck' }); }
+    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', { content_name: 'Free Website Audit', content_category: 'thank-you-question' }); }
 
     setTimeout(() => { window.location.href = 'thank-you-audit.html'; }, 1500);
   }
@@ -505,11 +505,11 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
     const btn = document.querySelector('#healthCheckFormWrap .form-submit-btn');
     btn.textContent = 'Sending...'; btn.classList.add('loading');
 
-    const healthCheckPayload = { firstName: fname, businessName: biz, email: email, phone: phone, websiteUrl: url, source: 'thank-you-healthcheck' };
+    const healthCheckPayload = { firstName: fname, businessName: biz, email: email, phone: phone, websiteUrl: url, source: 'thank-you-question-healthcheck' };
 
     fetch('https://formspree.io/f/mlgykwoo', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(healthCheckPayload), keepalive: true }).catch(()=>{});
     fetch('https://hook.eu1.make.com/0njfs4y7hacxefcw1dn9prsdeqkbbr2l', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(healthCheckPayload), keepalive: true }).catch(()=>{});
-    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', { content_name: 'Free Health Check', content_category: 'thank-you-healthcheck' }); }
+    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', { content_name: 'Free Health Check', content_category: 'thank-you-question' }); }
 
     setTimeout(() => { window.location.href = 'thank-you-healthcheck.html'; }, 1500);
   }
@@ -529,12 +529,12 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
     const qPayload = {
       name: name, businessName: document.getElementById('qf-biz').value.trim(),
       email: email, phone: document.getElementById('qf-phone').value.trim(),
-      message: msg, source: 'thank-you-healthcheck'
+      message: msg, source: 'thank-you-question'
     };
 
     fetch('https://formspree.io/f/mykqadbl', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(qPayload), keepalive: true }).catch(()=>{});
     fetch('https://hook.eu1.make.com/ia4sfvcak8fnlpd9fgp9vtmhwv41e8xq', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(qPayload), keepalive: true }).catch(()=>{});
-    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', { content_name: 'Got a Question', content_category: 'thank-you-healthcheck' }); }
+    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', { content_name: 'Got a Question', content_category: 'thank-you-question' }); }
 
     setTimeout(() => { window.location.href = 'thank-you-question.html'; }, 1500);
   }
