@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -55,7 +55,7 @@
     background:var(--white);
     border-radius:20px;
     padding:0 16px; height:64px;
-    display:flex; align-items:center; justify-content:space-between;
+    display:grid; grid-template-columns:auto 1fr auto; align-items:center;
     max-width:1440px; margin:0 auto;
     box-shadow:var(--shadow-md);
     border:1px solid var(--mid-grey);
@@ -164,6 +164,20 @@
   .pricing-custom { margin-top:56px; background:var(--black); border-radius:var(--radius-lg); padding:36px 40px; display:flex; align-items:center; justify-content:space-between; gap:28px; flex-wrap:wrap; }
   .pricing-custom h3 { font-family:'Sora',sans-serif; font-weight:800; font-size:20px; color:var(--white); margin-bottom:8px; letter-spacing:-0.3px; }
   .pricing-custom p { font-size:14.5px; color:rgba(255,255,255,0.7); max-width:900px; line-height:1.6; margin:0; }
+
+  /* SOLUTIONS / SERVICES GRID */
+  .solution-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:48px; }
+  @media (max-width:1180px) { .solution-grid { grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:640px) { .solution-grid { grid-template-columns:1fr; } }
+  .solution-card { display:flex; flex-direction:column; background:var(--white); border:1px solid var(--mid-grey); border-radius:var(--radius-lg); padding:32px 28px; transition:box-shadow 0.2s,transform 0.2s,border-color 0.2s; }
+  .solution-card:hover { box-shadow:var(--shadow-md); transform:translateY(-4px); border-color:rgba(0,183,152,0.35); }
+  .solution-icon { width:44px; height:44px; background:var(--teal-mist); color:var(--teal); border-radius:10px; display:flex; align-items:center; justify-content:center; margin-bottom:18px; flex-shrink:0; }
+  .solution-icon svg { width:22px; height:22px; stroke:var(--teal); }
+  .solution-name { font-size:19px; font-weight:800; color:var(--black); letter-spacing:-0.3px; margin-bottom:10px; font-family:'Sora',sans-serif; }
+  .solution-desc { font-size:14.5px; color:var(--text-mid); line-height:1.65; margin-bottom:18px; flex:1; }
+  .solution-meta { font-size:12px; font-weight:600; color:var(--teal); letter-spacing:0.2px; margin-bottom:18px; padding-top:16px; border-top:1px solid var(--mid-grey); }
+  .solution-learn { font-size:14px; font-weight:700; color:var(--black); text-decoration:none; }
+  .solution-learn:hover { color:var(--teal); }
 
   /* PAIN GRID */
   .pain-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:48px; }
@@ -279,7 +293,18 @@
   .checkbox-pill { display:flex; align-items:center; gap:10px; padding:10px 14px; border:1.5px solid var(--mid-grey); border-radius:8px; font-size:14px; color:var(--text-dark); cursor:pointer; transition:border-color 0.2s,background 0.2s; }
   .checkbox-pill:hover { border-color:var(--teal); background:rgba(0,183,152,0.04); }
   .checkbox-pill:has(input:checked) { border-color:var(--teal); background:rgba(0,183,152,0.06); }
-  .checkbox-pill input[type="checkbox"] { width:16px; height:16px; accent-color:var(--teal); flex-shrink:0; cursor:pointer; }
+  .checkbox-pill input[type="checkbox"] {
+    -webkit-appearance:none; appearance:none;
+    width:18px; height:18px; padding:0; margin:0; box-sizing:border-box;
+    border:1.5px solid var(--mid-grey); border-radius:5px; background:var(--white);
+    flex-shrink:0; cursor:pointer; position:relative;
+    transition:background 0.15s, border-color 0.15s;
+  }
+  .checkbox-pill input[type="checkbox"]:checked { background:var(--teal); border-color:var(--teal); }
+  .checkbox-pill input[type="checkbox"]:checked::after {
+    content:''; position:absolute; left:5px; top:1px; width:5px; height:9px;
+    border:solid var(--white); border-width:0 2px 2px 0; transform:rotate(45deg);
+  }
 
   /* FOOTER — trilo.bio style, inset rounded card (kept as-is) */
   footer { background:var(--black); margin:20px; border-radius:28px; padding:64px 40px 0; overflow:hidden; }
@@ -360,19 +385,48 @@
   .hp-field { opacity:0; position:absolute; top:0; left:0; height:0; width:0; z-index:-1; pointer-events:none; }
 
   /* NAV LINKS */
-  .nav-links { display:flex; align-items:center; gap:2px; position:absolute; left:50%; transform:translateX(-50%); }
+  .nav-links { display:flex; align-items:center; justify-content:center; gap:2px; min-width:0; }
   .nav-link { font-family:'Sora', sans-serif; font-size:13px; font-weight:600; color:var(--text-mid); text-decoration:none; padding:7px 8px; border-radius:8px; transition:color 0.2s, background 0.2s; white-space:nowrap; }
   .nav-link:hover { color:var(--teal); background:rgba(0,183,152,0.08); }
   .nav-right { display:flex; align-items:center; gap:10px; flex-shrink:0; }
   .nav-health-btn { background:transparent; color:var(--black); padding:10px 20px; border-radius:8px; font-family:'Sora',sans-serif; font-weight:700; font-size:13px; text-decoration:none; border:1.5px solid var(--mid-grey); transition:all 0.2s; white-space:nowrap; }
   .nav-health-btn:hover { border-color:var(--teal); color:var(--teal); }
-  @media (max-width:960px) { .nav-health-btn { display:none; } }
+  @media (max-width:1100px) { .nav-health-btn { display:none; } }
   .nav-phone-link { display:flex; align-items:center; gap:6px; font-family:'Sora',sans-serif; font-weight:700; font-size:13px; color:var(--black); text-decoration:none; white-space:nowrap; transition:color 0.2s; padding-right:14px; }
   .nav-phone-link svg { width:15px; height:15px; stroke:var(--teal); flex-shrink:0; }
   .nav-phone-link:hover { color:var(--teal); }
   @media (max-width:1100px) { .nav-phone-link { display:none; } }
   .nav-burger { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:4px; }
   .nav-burger span { display:block; width:22px; height:2px; background:var(--black); border-radius:2px; transition:all 0.25s; }
+
+  /* MEGA MENU */
+  .nav-item-mega { display:flex; align-items:center; }
+  .nav-mega-panel {
+    position:absolute; top:100%; left:50%; transform:translateX(-50%);
+    padding-top:14px;
+    opacity:0; visibility:hidden; pointer-events:none; transition:opacity 0.18s ease; z-index:150;
+  }
+  .nav-item-mega.mega-open .nav-mega-panel,
+  .nav-item-mega:focus-within .nav-mega-panel { opacity:1; visibility:visible; pointer-events:all; }
+  .nav-mega-panel-inner {
+    background:var(--white); border:1px solid var(--mid-grey); border-top:3px solid var(--teal); border-radius:16px;
+    box-shadow:var(--shadow-lg); padding:20px; display:grid; grid-template-columns:repeat(3,260px); gap:0;
+  }
+  .nav-mega-col { display:flex; flex-direction:column; gap:1px; padding:0 20px; }
+  .nav-mega-col:not(:first-child) { border-left:1px solid var(--mid-grey); }
+  .nav-mega-col-title { font-family:'Sora',sans-serif; font-weight:800; font-size:13.5px; color:var(--black); white-space:normal; margin-bottom:2px; }
+  .nav-mega-col-title::before { content:''; display:inline-block; width:7px; height:7px; background:var(--teal); border-radius:2px; margin-right:8px; vertical-align:middle; transform:translateY(-1px); }
+  .nav-mega-col-sub { font-size:11px; color:var(--text-mid); line-height:1.4; white-space:normal; margin-bottom:10px; }
+  .nav-mega-link { display:block; font-size:13px; color:var(--text-mid); text-decoration:none; padding:6px 8px; margin:0 -8px; border-radius:8px; white-space:nowrap; transition:background 0.15s, color 0.15s; border-left:2px solid transparent; }
+  .nav-mega-link:hover { background:var(--teal-mist); color:var(--teal); border-left-color:var(--teal); }
+  .nav-mega-cta {
+    grid-column:1 / -1; margin:20px -20px -20px -20px; padding:14px 20px;
+    background:var(--teal); color:var(--white); text-align:left; text-decoration:none;
+    font-family:'DM Sans',sans-serif; font-size:13.5px; border-radius:0 0 15px 15px;
+    transition:filter 0.2s;
+  }
+  .nav-mega-cta strong { font-family:'Sora',sans-serif; font-weight:800; }
+  .nav-mega-cta:hover { filter:brightness(0.93); }
 
   @media (max-width:960px) {
     .nav-links {
@@ -385,6 +439,8 @@
     .nav-link { width:100%; padding:12px 8px; font-size:15px; border-radius:0; border-bottom:1px solid var(--teal-mist); }
     .nav-link:last-child { border-bottom:none; }
     .nav-burger { display:flex; }
+    .nav-item-mega { width:100%; }
+    .nav-mega-panel { display:none; }
   }
 
   /* REVIEWS — grid layout */
@@ -548,8 +604,33 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 <nav>
   <a href="https://thriivdigital.com.au/" class="nav-logo"><img src="images/logo-thriiv.png" alt="thriiv.digital"></a>
   <div class="nav-links" id="navLinks">
-    <a href="#services" class="nav-link" onclick="closeNav()">What We Do</a>
-    <a href="results.html" class="nav-link" onclick="closeNav()">Results</a>
+    <div class="nav-item-mega">
+      <a href="#services" class="nav-link" onclick="closeNav()">What We Do</a>
+      <div class="nav-mega-panel">
+        <div class="nav-mega-panel-inner">
+          <div class="nav-mega-col">
+            <div class="nav-mega-col-title">Stop missing opportunities</div>
+            <div class="nav-mega-col-sub">No missed leads, no website downtime</div>
+            <a href="#" class="nav-mega-link" onclick="openAudit('thriiv Lead Automation'); return false;">thriiv Lead Automation</a>
+            <a href="#" class="nav-mega-link" onclick="openAudit('thriiv Care &amp; Maintenance'); return false;">thriiv Care &amp; Maintenance</a>
+          </div>
+          <div class="nav-mega-col">
+            <div class="nav-mega-col-title">Dominate local search</div>
+            <div class="nav-mega-col-sub">Rank on Google and get found in AI search</div>
+            <a href="#" class="nav-mega-link" onclick="openAudit('thriiv SEO + AEO'); return false;">thriiv SEO + AEO</a>
+            <a href="#" class="nav-mega-link" onclick="openAudit('thriiv Reviews'); return false;">thriiv Reviews</a>
+          </div>
+          <div class="nav-mega-col">
+            <div class="nav-mega-col-title">Scale your customer base</div>
+            <div class="nav-mega-col-sub">Get in front of ready-to-buy customers</div>
+            <a href="#" class="nav-mega-link" onclick="openAudit('thriiv Google Ads / Meta Ads'); return false;">thriiv Google Ads / Meta Ads</a>
+            <a href="#" class="nav-mega-link" onclick="openAudit('thriiv Website Design &amp; Development'); return false;">thriiv Website Design &amp; Development</a>
+          </div>
+          <a href="#" class="nav-mega-cta" onclick="openAudit(); return false;">Not sure what you need? <strong>Talk to our team &rarr;</strong></a>
+        </div>
+      </div>
+    </div>
+    <a href="/results/" class="nav-link" onclick="closeNav()">Results</a>
     <a href="#who-we-are" class="nav-link" onclick="closeNav()">Who We Are</a>
     <a href="#faq" class="nav-link" onclick="closeNav()">FAQs</a>
   </div>
@@ -629,6 +710,8 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       <div class="logo-item" style="margin-right:-36px;"><img src="images/logo-sydneydrafting.webp" alt="Sydney Drafting" class="logo-img" loading="lazy" /></div>
       <div class="logo-item"><img src="images/logo-highlands.png" alt="Highlands Cleaning" class="logo-img" loading="lazy" /></div>
       <div class="logo-item"><img src="images/logo-southernhighlandspainters.gif" alt="Southern Highlands Painters" class="logo-img" loading="lazy" /></div>
+      <div class="logo-item"><img src="images/sub-summit-logo.jpg" alt="Suburban Business Summit" class="logo-img" style="height:82px;" loading="lazy" /></div>
+      <div class="logo-item"><img src="images/GCDS-logo-crop.png" alt="Growth Concept Development Services" class="logo-img" style="height:68px;" loading="lazy" /></div>
       <div class="logo-item"><img src="images/logo-shellharbour-air-hq.png" alt="Shellharbour Airconditioning" class="logo-img" style="height:65px;" loading="lazy" /></div>
       <div class="logo-item"><img src="images/logo-accountright-hq.png" alt="AccountRight" class="logo-img" style="height:40px;" loading="lazy" /></div>
       <div class="logo-item"><img src="images/logo-kiama.png" alt="Kiama Cleaning" class="logo-img" loading="lazy" /></div>
@@ -641,6 +724,8 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       <div class="logo-item" style="margin-right:-36px;"><img src="images/logo-sydneydrafting.webp" alt="Sydney Drafting" class="logo-img" loading="lazy" /></div>
       <div class="logo-item"><img src="images/logo-highlands.png" alt="Highlands Cleaning" class="logo-img" loading="lazy" /></div>
       <div class="logo-item"><img src="images/logo-southernhighlandspainters.gif" alt="Southern Highlands Painters" class="logo-img" loading="lazy" /></div>
+      <div class="logo-item"><img src="images/sub-summit-logo.jpg" alt="Suburban Business Summit" class="logo-img" style="height:82px;" loading="lazy" /></div>
+      <div class="logo-item"><img src="images/GCDS-logo-crop.png" alt="Growth Concept Development Services" class="logo-img" style="height:68px;" loading="lazy" /></div>
     </div>
   </div>
 </div>
@@ -793,7 +878,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 
     </div>
     <div class="case-grid-more">
-      <a href="results.html" class="btn-secondary">View More Results →</a>
+      <a href="/results/" class="btn-secondary">View More Results →</a>
     </div>
   </div>
 </section>
@@ -806,68 +891,62 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       <h2 class="section-title">Built to help you thriiv.</h2>
       <p class="section-sub" style="margin-left:auto;margin-right:auto;">The real value comes from having one team accountable for the whole picture, rather than juggling a web developer, an SEO freelancer, and an ads agency who've never spoken to each other.</p>
     </div>
-    <div class="pricing-grid">
+    <div class="solution-grid">
 
-      <!-- thriiv Lead Automation -->
-      <div class="pricing-card fade-up" id="service-lead-automation">
-        <div class="pricing-name">thriiv Lead Automation</div>
-        <p class="pricing-tagline">Stop missing leads. Put your responses on autopilot.</p>
-        <div class="pricing-feature-list">
-          <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Missed Call Auto-Text</strong> — Instantly text back missed callers to save the lead before they call a competitor.</div></div>
-          <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Instant Lead Capture</strong> — Route website and Facebook leads straight to your smartphone.</div></div>
-          <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Automated Follow-Ups</strong> — Keep your pipeline moving so your quotes never go cold.</div></div>
-          <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Live Client Dashboard</strong> — See exactly how many leads came in and how many jobs were won in real time.</div></div>
-        </div>
-        <a href="#" class="btn-secondary pricing-cta" onclick="openAudit('thriiv Lead Automation'); return false;">Get Started</a>
-      </div>
-
-      <!-- thriiv Reviews -->
-      <div class="pricing-card fade-up fade-up-delay-1" id="service-reviews">
-        <div class="pricing-name">thriiv Reviews</div>
-        <p class="pricing-tagline">Build trust automatically and rank higher on Google.</p>
-        <div class="pricing-feature-list">
-          <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Auto-Review Requests</strong> — Send automated text or email review links to your clients the moment a job is done.</div></div>
-          <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Effortless Growth</strong> — Hand off the chore of collecting 5-star Google reviews so you can build your reputation on autopilot.</div></div>
-          <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Negative Feedback Filter</strong> — Give unhappy clients a private way to reach you before they leave a public 1-star review.</div></div>
-          <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Live Client Dashboard</strong> — Track your overall rating, new reviews collected, and response rates in real time.</div></div>
-        </div>
-        <a href="#" class="btn-secondary pricing-cta" onclick="openAudit('thriiv Reviews'); return false;">Get Started</a>
-      </div>
-
-      <!-- thriiv Ads -->
-      <div class="pricing-card fade-up fade-up-delay-2" id="service-ads">
-        <div class="pricing-name">thriiv Ads</div>
-        <p class="pricing-tagline">Get your business in front of ready-to-buy clients.</p>
-        <div class="pricing-feature-list">
-          <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Google Ads OR Meta Ads</strong> — We recommend and manage the best platform (Google or Facebook/Instagram) based entirely on your specific business goals.</div></div>
-          <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Custom Landing Pages</strong> — Fast, single pages built specifically to turn clicks into paying clients.</div></div>
-          <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Service Area Targeting</strong> — Expertly managed ad campaigns focused only on the exact suburbs you want to work in.</div></div>
-          <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Live Client Dashboard</strong> — See exactly how many leads came in and how many jobs were won in real time.</div></div>
-        </div>
-        <a href="#" class="btn-secondary pricing-cta" onclick="openAudit('thriiv Ads'); return false;">Get Started</a>
+      <!-- thriiv Website Design & Development -->
+      <div class="solution-card fade-up" id="service-website">
+        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <div class="solution-name">thriiv Website Design &amp; Development</div>
+        <p class="solution-desc">Websites built from wireframes and design through to development and launch. We handle the whole build so your new site looks great, loads fast, and is set up to turn visitors into enquiries from day one — then we keep refining it as your business grows.</p>
+        <div class="solution-meta">Custom builds · Landing pages · Redesigns · Ongoing updates</div>
+        <a href="#" class="solution-learn" onclick="openAudit('thriiv Website Design &amp; Development'); return false;">Learn more →</a>
       </div>
 
       <!-- thriiv SEO -->
-      <div class="pricing-card fade-up fade-up-delay-3" id="service-seo">
-        <div class="pricing-name">thriiv SEO</div>
-        <p class="pricing-tagline">Dominate local search — getting found in AI search, not just Google.</p>
-        <div class="pricing-feature-list">
-          <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Blog Content Development</strong> — Pillar page content built to rank on Google and establish topical authority.</div></div>
-          <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Google Maps Optimisation</strong> — Complete overhaul of your map listing to rank higher locally.</div></div>
-          <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Local SEO Strategy</strong> — Long-term search engine optimisation to bring in free, organic leads over time.</div></div>
-          <div class="pricing-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><strong>Live Client Dashboard</strong> — See exactly how many leads came in and how many jobs were won in real time.</div></div>
-        </div>
-        <a href="#" class="btn-secondary pricing-cta" onclick="openAudit('thriiv SEO'); return false;">Get Started</a>
+      <div class="solution-card fade-up fade-up-delay-1" id="service-seo">
+        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <div class="solution-name">thriiv SEO + AEO</div>
+        <p class="solution-desc">Dominate local search and get found in AI search, not just Google. We write pillar page content that ranks and builds topical authority, overhaul your Google Maps listing so you rank higher locally, and run a long-term local SEO strategy that brings in organic leads over time.</p>
+        <div class="solution-meta">Blog content · Google Maps optimisation · Local SEO strategy · Live dashboard</div>
+        <a href="#" class="solution-learn" onclick="openAudit('thriiv SEO + AEO'); return false;">Learn more →</a>
       </div>
 
-    </div>
-
-    <div class="pricing-custom fade-up" id="service-custom">
-      <div style="flex:1;min-width:0;">
-        <h3>thriiv Custom - web design + more.</h3>
-        <p>Our core plans cover the essentials, but we're completely flexible. If your business needs a bespoke setup, a full website build from scratch, regular content updates, or a multi-location strategy, we can build a custom arrangement tailored to your exact blueprint. Let's Talk.</p>
+      <!-- thriiv Google Ads / Meta Ads -->
+      <div class="solution-card fade-up fade-up-delay-2" id="service-ads">
+        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <div class="solution-name">thriiv Google Ads / Meta Ads</div>
+        <p class="solution-desc">Get your business in front of ready-to-buy clients. We recommend and manage whichever platform suits your goals best — Google or Facebook/Instagram — build fast landing pages designed to turn clicks into paying clients, and keep every campaign focused only on the suburbs you want to work in.</p>
+        <div class="solution-meta">Google Ads · Meta Ads · Landing pages · Service area targeting</div>
+        <a href="#" class="solution-learn" onclick="openAudit('thriiv Google Ads / Meta Ads'); return false;">Learn more →</a>
       </div>
-      <a href="#" class="btn-primary" style="flex-shrink:0;" onclick="openCalendly(); return false;">Let's Talk</a>
+
+      <!-- thriiv Care & Maintenance -->
+      <div class="solution-card fade-up fade-up-delay-3" id="service-maintenance">
+        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></svg></div>
+        <div class="solution-name">thriiv Care &amp; Maintenance</div>
+        <p class="solution-desc">Keep your site secure, fast, and up-to-date without lifting a finger. We handle Australian hosting, daily backups, security updates, and speed optimisation, plus hands-on support whenever you need a content change made.</p>
+        <div class="solution-meta">Australian hosting · Daily backups · Content updates · Monthly reporting</div>
+        <a href="#" class="solution-learn" onclick="openAudit('thriiv Care &amp; Maintenance'); return false;">Learn more →</a>
+      </div>
+
+      <!-- thriiv Lead Automation -->
+      <div class="solution-card fade-up" id="service-lead-automation">
+        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <div class="solution-name">thriiv Lead Automation</div>
+        <p class="solution-desc">Stop missing leads and put your responses on autopilot. We instantly text back missed callers before they ring a competitor, route website and Facebook leads straight to your phone, and keep automated follow-ups running so your quotes never go cold.</p>
+        <div class="solution-meta">Missed call auto-text · Instant lead capture · Automated follow-ups · Live dashboard</div>
+        <a href="#" class="solution-learn" onclick="openAudit('thriiv Lead Automation'); return false;">Learn more →</a>
+      </div>
+
+      <!-- thriiv Reviews -->
+      <div class="solution-card fade-up fade-up-delay-1" id="service-reviews">
+        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="solution-name">thriiv Reviews</div>
+        <p class="solution-desc">Build trust automatically and rank higher on Google. We send automated review requests the moment a job is done, take the chore of chasing 5-star reviews off your plate, and give unhappy clients a private way to reach you before they leave a public 1-star review.</p>
+        <div class="solution-meta">Auto-review requests · Reputation growth · Negative feedback filter · Live dashboard</div>
+        <a href="#" class="solution-learn" onclick="openAudit('thriiv Reviews'); return false;">Learn more →</a>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1008,7 +1087,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
         <h3>Let's Thriiv</h3>
         <span class="process-time">Execution &amp; Scale</span>
         <p>If we're a great fit, our team takes the wheel. We execute your custom strategy, launch your optimised platform, and start driving high-intent local leads straight to your business.</p>
-        <a href="results.html" class="btn-secondary process-btn">See Our Results</a>
+        <a href="/results/" class="btn-secondary process-btn">See Our Results</a>
       </div>
     </div>
   </div>
@@ -1207,7 +1286,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
         <div class="footer-col-title" style="margin-bottom:3px;">Explore</div>
         <div class="footer-quicklinks">
           <a href="#services">What We Do</a>
-          <a href="results.html">Results</a>
+          <a href="/results/">Results</a>
           <a href="#who-we-are">Who We Are</a>
           <a href="#faq">FAQs</a>
         </div>
@@ -1216,11 +1295,12 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       <div class="footer-links-col">
         <div class="footer-col-title" style="margin-bottom:3px;">Our Services</div>
         <div class="footer-quicklinks">
+          <a href="#service-website">thriiv Website Design &amp; Development</a>
+          <a href="#service-seo">thriiv SEO + AEO</a>
+          <a href="#service-ads">thriiv Google Ads / Meta Ads</a>
+          <a href="#service-maintenance">thriiv Care &amp; Maintenance</a>
           <a href="#service-lead-automation">thriiv Lead Automation</a>
           <a href="#service-reviews">thriiv Reviews</a>
-          <a href="#service-ads">thriiv Ads</a>
-          <a href="#service-seo">thriiv SEO</a>
-          <a href="#service-custom">thriiv Custom - Web design &amp; more</a>
         </div>
       </div>
 
@@ -1249,10 +1329,10 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 thriiv.digital · thriiv Digital · Ground Floor, Enterprise 1, Innovation Campus, Squires Way, North Wollongong NSW 2500</p>
+      <p>© 2026 thriiv.digital · thriiv Digital · <a href="https://www.google.com/maps/search/?api=1&amp;query=Ground%20Floor%2C%20Enterprise%201%2C%20Innovation%20Campus%2C%20Squires%20Way%2C%20North%20Wollongong%20NSW%202500" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.45);text-decoration:none;">Ground Floor, Enterprise 1, Innovation Campus, Squires Way, North Wollongong NSW 2500</a></p>
       <div class="footer-bottom-links">
         <a href="#" onclick="openQuestion(); return false;">Got a Question?</a>
-        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="/privacy-policy/">Privacy Policy</a>
       </div>
     </div>
   </div>
@@ -1414,7 +1494,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 
   function submitAudit() {
     // Honeypot check — bail silently if a bot has filled the hidden field
-    if (document.getElementById('af-hp').value !== '') { setTimeout(() => { window.location.href = 'thank-you-audit.html'; }, 1500); return; }
+    if (document.getElementById('af-hp').value !== '') { setTimeout(() => { window.location.href = '/thank-you-audit/'; }, 1500); return; }
     const fname = document.getElementById('af-fname').value.trim();
     const biz = document.getElementById('af-biz').value.trim();
     const email = document.getElementById('af-email').value.trim();
@@ -1462,14 +1542,14 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 
     // Redirect after 1.5s regardless of webhook response
     setTimeout(() => {
-      window.location.href = 'thank-you-audit.html';
+      window.location.href = '/thank-you-audit/';
     }, 1500);
   }
 
 
   function submitHealthCheck() {
     // Honeypot check — bail silently if a bot has filled the hidden field
-    if (document.getElementById('hc-hp').value !== '') { setTimeout(() => { window.location.href = 'thank-you-healthcheck.html'; }, 1500); return; }
+    if (document.getElementById('hc-hp').value !== '') { setTimeout(() => { window.location.href = '/thank-you-healthcheck/'; }, 1500); return; }
     const fname = document.getElementById('hc-fname').value.trim();
     const biz = document.getElementById('hc-biz').value.trim();
     const email = document.getElementById('hc-email').value.trim();
@@ -1512,14 +1592,14 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 
     // Redirect after 1.5s regardless of webhook response
     setTimeout(() => {
-      window.location.href = 'thank-you-healthcheck.html';
+      window.location.href = '/thank-you-healthcheck/';
     }, 1500);
   }
 
 
   function submitQuestion() {
     // Honeypot check — bail silently if a bot has filled the hidden field
-    if (document.getElementById('qf-hp').value !== '') { setTimeout(() => { window.location.href = 'thank-you-question.html'; }, 1500); return; }
+    if (document.getElementById('qf-hp').value !== '') { setTimeout(() => { window.location.href = '/thank-you-question/'; }, 1500); return; }
     const name = document.getElementById('qf-name').value.trim();
     const email = document.getElementById('qf-email').value.trim();
     const msg = document.getElementById('qf-message').value.trim();
@@ -1558,7 +1638,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
     }
 
     setTimeout(() => {
-      window.location.href = 'thank-you-question.html';
+      window.location.href = '/thank-you-question/';
     }, 1500);
   }
 
@@ -1585,7 +1665,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
         // Listen for Calendly booking confirmation
         window.addEventListener('message', function(e) {
           if (e.data.event && e.data.event === 'calendly.event_scheduled') {
-            window.location.href = 'thank-you-call.html';
+            window.location.href = '/thank-you-call/';
           }
         });
       };
@@ -1651,6 +1731,20 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       nav.classList.remove('open');
     }
   });
+
+  // ── MEGA MENU (grace period so a wide panel doesn't snap shut mid-hover) ──
+  (function () {
+    const wrap = document.querySelector('.nav-item-mega');
+    const panel = document.querySelector('.nav-mega-panel');
+    if (!wrap || !panel) return;
+    let closeTimer;
+    const open = () => { clearTimeout(closeTimer); wrap.classList.add('mega-open'); };
+    const scheduleClose = () => { closeTimer = setTimeout(() => wrap.classList.remove('mega-open'), 250); };
+    wrap.addEventListener('mouseenter', open);
+    wrap.addEventListener('mouseleave', scheduleClose);
+    panel.addEventListener('mouseenter', open);
+    panel.addEventListener('mouseleave', scheduleClose);
+  })();
 </script>
 </body>
 </html>
