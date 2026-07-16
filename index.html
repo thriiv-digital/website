@@ -228,7 +228,6 @@
 
   /* OUR PROCESS */
   .process-steps { display:grid; grid-template-columns:1fr 40px 1fr 40px 1fr; align-items:start; gap:0 20px; margin-top:36px; }
-  @media (max-width:900px) { .process-steps { grid-template-columns:1fr; gap:20px; } .process-arrow { display:none; } }
   .process-step { background:var(--white); border:1px solid var(--mid-grey); border-radius:var(--radius-lg); padding:32px 26px; }
   .process-num { width:44px; height:44px; border-radius:12px; background:var(--teal); color:var(--white); font-family:'Sora', sans-serif; font-weight:800; font-size:18px; display:flex; align-items:center; justify-content:center; margin-bottom:18px; }
   .process-step h3 { font-size:18px; font-weight:700; color:var(--black); margin-bottom:6px; letter-spacing:-0.2px; }
@@ -237,6 +236,7 @@
   .process-btn { width:100%; margin-top:20px; padding:13px 20px; font-size:14px; box-shadow:none; }
   .process-arrow { display:flex; align-items:center; justify-content:center; color:var(--teal); opacity:0.5; padding-top:60px; }
   .process-arrow svg { width:22px; height:22px; }
+  @media (max-width:900px) { .process-steps { grid-template-columns:1fr; gap:20px; } .process-arrow { display:none; } }
 
   /* FAQ */
   .faq-list { max-width:1440px; margin:48px auto 0; column-count:2; column-gap:20px; text-align:left; }
@@ -415,7 +415,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 <!-- End Meta Pixel -->
 
   <link rel="preload" href="images/team.webp" as="image" type="image/webp">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
   <script type="application/ld+json">
   {
