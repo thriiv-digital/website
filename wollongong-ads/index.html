@@ -198,25 +198,60 @@
   .platform-chip-tag { font-size:10px; font-weight:700; color:var(--text-mid); background:var(--teal-mist); padding:4px 9px; border-radius:100px; white-space:nowrap; }
   .platform-chip.meta .platform-chip-tag { background:rgba(255,255,255,0.08); color:rgba(255,255,255,0.75); }
 
+  /* META AD MOCKUP (Instagram/Facebook-style ad card) */
+  .meta-ad-mock { width:100%; max-width:230px; margin:0 auto 26px; position:relative; }
+  .meta-ad-card { background:var(--white); border-radius:var(--radius); box-shadow:var(--shadow-md); overflow:hidden; border:1px solid var(--mid-grey); }
+  .meta-ad-head { display:flex; align-items:center; gap:8px; padding:10px 12px; }
+  .meta-ad-avatar { width:28px; height:28px; border-radius:50%; background:var(--teal); color:var(--white); display:flex; align-items:center; justify-content:center; font-family:'Sora',sans-serif; font-weight:800; font-size:12px; flex-shrink:0; }
+  .meta-ad-head-text { flex:1; min-width:0; }
+  .meta-ad-name { font-family:'Sora',sans-serif; font-weight:800; font-size:12px; color:var(--black); line-height:1.3; }
+  .meta-ad-sponsored { font-size:10px; color:var(--text-light); line-height:1.3; }
+  .meta-ad-dots { color:var(--text-light); font-size:16px; line-height:1; letter-spacing:1px; }
+  .meta-ad-image { position:relative; height:170px; background:linear-gradient(100deg,#0d1b2a 0%,#0d1b2a 50%,#dcf3ea 50%,#dcf3ea 100%); }
+  .meta-ad-image-label { position:absolute; top:8px; left:8px; background:rgba(0,0,0,0.55); color:#fff; font-size:9px; font-weight:700; padding:3px 8px; border-radius:4px; letter-spacing:0.3px; }
+  .meta-ad-image-label.after { left:auto; right:8px; background:rgba(0,183,152,0.9); }
+  .meta-ad-play { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:34px; height:34px; border-radius:50%; background:rgba(255,255,255,0.92); display:flex; align-items:center; justify-content:center; box-shadow:var(--shadow-sm); }
+  .meta-ad-play svg { width:13px; height:13px; fill:var(--black); margin-left:2px; }
+  .meta-ad-body { padding:11px 12px 5px; }
+  .meta-ad-caption { font-size:10.5px; color:var(--text-dark); line-height:1.5; margin-bottom:10px; }
+  .meta-ad-caption strong { font-family:'Sora',sans-serif; }
+  .meta-ad-cta-row { display:flex; align-items:center; justify-content:space-between; gap:8px; background:var(--teal-mist); border-radius:6px; padding:9px 12px; margin-bottom:10px; }
+  .meta-ad-cta-domain { font-size:9px; color:var(--text-light); text-transform:uppercase; letter-spacing:0.4px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .meta-ad-cta-btn { font-family:'Sora',sans-serif; font-weight:700; font-size:11px; color:var(--black); white-space:nowrap; flex-shrink:0; }
+  .meta-ad-actions { display:flex; align-items:center; gap:14px; padding:0 12px 12px; }
+  .meta-ad-actions svg { width:16px; height:16px; stroke:var(--text-mid); flex-shrink:0; }
+
+  /* FLOATING GOOGLE AD SNIPPET (paired with meta ad mock) */
+  .google-ad-float { position:absolute; bottom:-22px; left:-20px; background:var(--white); border:1px solid var(--mid-grey); border-radius:var(--radius); box-shadow:var(--shadow-lg); padding:12px 14px; width:150px; }
+  .google-ad-float-search { display:flex; align-items:center; gap:5px; background:var(--teal-mist); border-radius:100px; padding:5px 9px; font-size:9px; color:var(--text-mid); margin-bottom:9px; }
+  .google-ad-float-search svg { width:10px; height:10px; stroke:var(--text-light); flex-shrink:0; }
+  .google-ad-float-result-tag { display:inline-block; font-size:8.5px; font-weight:800; color:var(--teal); border:1px solid var(--teal); border-radius:3px; padding:0 4px; margin-right:4px; vertical-align:middle; }
+  .google-ad-float-result-name { font-family:'Sora',sans-serif; font-weight:800; font-size:10px; color:var(--black); vertical-align:middle; }
+  .google-ad-float-result-line { height:5px; border-radius:2px; background:var(--mid-grey); margin-top:6px; }
+
   /* COMPARE CARDS (Choose Google / Meta) */
   .compare-cards-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:44px; }
   @media (max-width:760px) { .compare-cards-grid { grid-template-columns:1fr; } }
-  .compare-card { background:var(--white); border-radius:var(--radius-lg); padding:30px 28px; box-shadow:var(--shadow-sm); text-align:left; }
+  .compare-card { background:var(--white); border-radius:var(--radius-lg); padding:30px 28px; box-shadow:var(--shadow-sm); text-align:left; transition:background 0.2s,box-shadow 0.2s,transform 0.2s; }
   .compare-card.meta { background:rgba(0,0,0,0.22); }
+  .compare-card:hover { background:var(--white); box-shadow:var(--shadow-md); transform:translateY(-4px); }
   .compare-card-head { display:flex; align-items:center; gap:14px; margin-bottom:16px; }
-  .compare-card-icon { width:44px; height:44px; background:var(--teal-mist); color:var(--teal); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .compare-card-icon { width:44px; height:44px; background:var(--teal-mist); color:var(--teal); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:background 0.2s; }
   .compare-card-icon svg { width:22px; height:22px; stroke:var(--teal); }
   .compare-card.meta .compare-card-icon { background:rgba(255,255,255,0.14); }
-  .compare-card.meta .compare-card-icon svg { stroke:var(--white); }
-  .compare-card-name { font-family:'Sora',sans-serif; font-weight:800; font-size:18px; color:var(--black); }
+  .compare-card.meta .compare-card-icon svg { stroke:var(--white); transition:stroke 0.2s; }
+  .compare-card.meta:hover .compare-card-icon { background:var(--teal-mist); }
+  .compare-card.meta:hover .compare-card-icon svg { stroke:var(--teal); }
+  .compare-card-name { font-family:'Sora',sans-serif; font-weight:800; font-size:18px; color:var(--black); transition:color 0.2s; }
   .compare-card.meta .compare-card-name { color:var(--white); }
-  .compare-card-desc { font-size:14.5px; color:var(--text-mid); line-height:1.7; margin-bottom:18px; }
+  .compare-card.meta:hover .compare-card-name { color:var(--black); }
+  .compare-card-desc { font-size:14.5px; color:var(--text-mid); line-height:1.7; margin-bottom:18px; transition:color 0.2s; }
   .compare-card.meta .compare-card-desc { color:rgba(255,255,255,0.8); }
-  .compare-card-desc strong { color:var(--black); }
+  .compare-card.meta:hover .compare-card-desc { color:var(--text-mid); }
+  .compare-card-desc strong { color:var(--black); transition:color 0.2s; }
   .compare-card.meta .compare-card-desc strong { color:var(--white); }
+  .compare-card.meta:hover .compare-card-desc strong { color:var(--black); }
   .compare-card-tags { display:flex; flex-wrap:wrap; gap:8px; }
-  .choose-both-banner { max-width:920px; margin:24px auto 0; background:rgba(255,255,255,0.1); border-left:4px solid var(--white); border-radius:var(--radius); padding:20px 26px; text-align:left; font-size:15px; color:rgba(255,255,255,0.9); line-height:1.7; }
-  .choose-both-banner strong { color:var(--white); }
 
   /* COMPARE TABLE (Quick Comparison Breakdown) */
   .compare-table-wrap { margin-top:56px; overflow-x:auto; }
@@ -652,7 +687,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 
     <div class="hero-actions">
       <a href="#" class="btn-primary" onclick="openAudit('thriiv Google Ads / Meta Ads'); return false;">Get a Free Lead Growth Audit →</a>
-      <a href="/results/" class="btn-secondary">See Our Case Studies</a>
+      <a href="#" class="btn-secondary" onclick="openCalendly(); return false;">Talk to an Illawarra Specialist →</a>
     </div>
 
     <div class="hero-stats-row fade-up">
@@ -743,9 +778,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       </div>
     </div>
 
-    <div class="choose-both-banner fade-up fade-up-delay-2"><strong>Choose both if</strong> you want complete local market dominance — capturing active buyers today while consistently filling your pipeline with future leads. During our strategy call, we analyse your business model and target suburbs to recommend the exact platform mix that delivers the highest ROI for your budget.</div>
-
-    <div class="compare-table-wrap fade-up fade-up-delay-3">
+    <div class="compare-table-wrap fade-up fade-up-delay-2">
       <div class="compare-table">
         <div class="compare-row head">
           <div class="compare-cell label">Strategy</div>
@@ -793,22 +826,39 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 
     <div class="showcase-row fade-up">
       <div class="showcase-image"><div class="graphic-panel">
-        <div class="platform-split">
-          <div class="platform-chip">
-            <div class="platform-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-            <div class="platform-chip-name">Google</div>
-            <div class="platform-chip-tags">
-              <span class="platform-chip-tag">high-intent</span>
-              <span class="platform-chip-tag">keywords</span>
+        <div class="meta-ad-mock">
+          <div class="meta-ad-card">
+            <div class="meta-ad-head">
+              <div class="meta-ad-avatar">Y</div>
+              <div class="meta-ad-head-text">
+                <div class="meta-ad-name">Your Business</div>
+                <div class="meta-ad-sponsored">Sponsored</div>
+              </div>
+              <div class="meta-ad-dots">⋯</div>
+            </div>
+            <div class="meta-ad-image">
+              <span class="meta-ad-image-label">Before</span>
+              <span class="meta-ad-image-label after">After</span>
+              <div class="meta-ad-play"><svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"/></svg></div>
+            </div>
+            <div class="meta-ad-body">
+              <div class="meta-ad-caption"><strong>Roof looking tired?</strong> We restored this Wollongong home in 2 days flat — book your free quote today.</div>
+              <div class="meta-ad-cta-row">
+                <span class="meta-ad-cta-domain">yourbusiness.com.au</span>
+                <span class="meta-ad-cta-btn">Learn More</span>
+              </div>
+              <div class="meta-ad-actions">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="10.5" x2="15.4" y2="6.5"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/></svg>
+              </div>
             </div>
           </div>
-          <div class="platform-chip meta">
-            <div class="platform-chip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="13" height="14" rx="2"/><polygon points="16 9 21 6 21 18 16 15"/></svg></div>
-            <div class="platform-chip-name">Meta</div>
-            <div class="platform-chip-tags">
-              <span class="platform-chip-tag">vertical video</span>
-              <span class="platform-chip-tag">carousels</span>
-            </div>
+          <div class="google-ad-float">
+            <div class="google-ad-float-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>roof restoration</div>
+            <span class="google-ad-float-result-tag">Ad</span><span class="google-ad-float-result-name">Your Business</span>
+            <div class="google-ad-float-result-line" style="width:90%;"></div>
+            <div class="google-ad-float-result-line" style="width:65%;"></div>
           </div>
         </div>
       </div></div>
