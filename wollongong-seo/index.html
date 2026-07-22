@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -15,18 +15,18 @@
     'domains': ['go.thriiv.digital', 'calendly.com']
   });
 </script>
-<title>Wollongong Web Design | Built to Rank &amp; Convert | thriiv</title>
-<link rel="canonical" href="https://thriivdigital.com.au/wollongong-web-design/">
-<meta name="description" content="Need a Wollongong web design agency that gets you leads? We build fast, mobile-first websites for Illawarra businesses — built to rank locally and convert.">
+<title>Wollongong SEO + AEO | Rank on Google &amp; AI Search | thriiv</title>
+<link rel="canonical" href="https://thriivdigital.com.au/wollongong-seo/">
+<meta name="description" content="Wollongong SEO + AEO built to turn searches into paying customers. Dominate Google, claim the Maps 3-Pack, and become the answer AI platforms give your customers.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="thriiv Digital">
-<meta property="og:title" content="Wollongong Web Design | Built to Rank &amp; Convert | thriiv">
-<meta property="og:description" content="Need a Wollongong web design agency that gets you leads? We build fast, mobile-first websites for Illawarra businesses — built to rank locally and convert.">
-<meta property="og:url" content="https://thriivdigital.com.au/wollongong-web-design/">
+<meta property="og:title" content="Wollongong SEO + AEO | Rank on Google &amp; AI Search | thriiv">
+<meta property="og:description" content="Wollongong SEO + AEO built to turn searches into paying customers. Dominate Google, claim the Maps 3-Pack, and become the answer AI platforms give your customers.">
+<meta property="og:url" content="https://thriivdigital.com.au/wollongong-seo/">
 <meta property="og:image" content="https://thriivdigital.com.au/images/logo-thriiv.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Wollongong Web Design | Built to Rank &amp; Convert | thriiv">
-<meta name="twitter:description" content="Need a Wollongong web design agency that gets you leads? We build fast, mobile-first websites for Illawarra businesses — built to rank locally and convert.">
+<meta name="twitter:title" content="Wollongong SEO + AEO | Rank on Google &amp; AI Search | thriiv">
+<meta name="twitter:description" content="Wollongong SEO + AEO built to turn searches into paying customers. Dominate Google, claim the Maps 3-Pack, and become the answer AI platforms give your customers.">
 <meta name="twitter:image" content="https://thriivdigital.com.au/images/logo-thriiv.png">
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
@@ -123,6 +123,19 @@
   .logo-img { height:52px; width:auto; max-width:140px; object-fit:contain; opacity:0.85; filter:none; transition:opacity 0.2s; }
   .logo-img:hover { opacity:1; }
 
+  /* STATS / WHY IT MATTERS */
+  .stats-section { padding:70px 24px 88px; }
+  .stats-intro { max-width:720px; margin:0 auto 48px; text-align:center; font-size:17px; color:var(--text-mid); line-height:1.75; }
+  .stats-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  @media (max-width:860px) { .stats-grid { grid-template-columns:1fr; } }
+  .stat-card { background:var(--white); border:1px solid var(--mid-grey); border-radius:var(--radius-lg); padding:36px 28px; text-align:center; transition:box-shadow 0.2s,transform 0.2s; }
+  .stat-card:hover { box-shadow:var(--shadow-md); transform:translateY(-4px); }
+  .stat-num { font-family:'Sora',sans-serif; font-weight:800; font-size:44px; color:var(--teal); letter-spacing:-1px; line-height:1; margin-bottom:16px; }
+  .stat-desc { font-size:15px; color:var(--text-dark); line-height:1.6; font-weight:500; margin-bottom:14px; }
+  .stat-source { font-size:12px; color:var(--text-light); font-style:italic; }
+  .stats-callout { max-width:780px; margin:48px auto 0; background:var(--teal-mist); border-left:4px solid var(--teal); border-radius:var(--radius); padding:24px 28px; text-align:left; font-size:16px; color:var(--text-dark); line-height:1.7; }
+  .stats-callout strong { color:var(--black); }
+
   /* SECTIONS */
   .section { padding:88px 24px; }
   .section-teal { background:var(--teal); }
@@ -139,7 +152,7 @@
   /* ICONS (generic) */
   .icon-md { width:22px; height:22px; flex-shrink:0; }
 
-  /* SOLUTION CARDS (reused for "What Comes Next") */
+  /* SOLUTION CARDS (reused for "Related Services") */
   .solution-card { display:flex; flex-direction:column; background:var(--white); border:1px solid var(--mid-grey); border-radius:var(--radius-lg); padding:32px 28px; transition:box-shadow 0.2s,transform 0.2s,border-color 0.2s; }
   .solution-card:hover { box-shadow:var(--shadow-md); transform:translateY(-4px); border-color:rgba(0,183,152,0.35); }
   .solution-icon { width:44px; height:44px; background:var(--teal-mist); color:var(--teal); border-radius:10px; display:flex; align-items:center; justify-content:center; margin-bottom:18px; flex-shrink:0; }
@@ -149,14 +162,17 @@
   .solution-learn { font-size:14px; font-weight:700; color:var(--black); text-decoration:none; }
   .solution-learn:hover { color:var(--teal); }
 
-  /* SHOWCASE ROWS — alternating image + text, "What We Do" */
+  /* 3-UP GRID (Related Services) */
+  .grid-3up { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:48px; align-items:stretch; }
+  @media (max-width:900px) { .grid-3up { grid-template-columns:1fr; } }
+
+  /* SHOWCASE ROWS — alternating graphic + text, "What We Do" */
   .showcase-row { display:flex; align-items:center; gap:56px; margin-top:64px; }
   .showcase-row:first-child { margin-top:48px; }
   .showcase-row.reverse { flex-direction:row-reverse; }
   @media (max-width:860px) { .showcase-row, .showcase-row.reverse { flex-direction:column; gap:28px; margin-top:48px; } }
-  .showcase-image { flex:1 1 44%; min-width:0; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--mid-grey); box-shadow:var(--shadow-md); aspect-ratio:5/4; }
-  .showcase-image img { width:100%; height:100%; object-fit:cover; object-position:top; display:block; }
-  @media (max-width:860px) { .showcase-image { flex:1 1 100%; width:100%; aspect-ratio:16/10; } }
+  .showcase-image { flex:1 1 44%; min-width:0; display:flex; align-items:center; justify-content:center; }
+  @media (max-width:860px) { .showcase-image { flex:1 1 100%; width:100%; } }
   .showcase-content { flex:1 1 56%; text-align:left; }
   @media (max-width:860px) { .showcase-content { flex:1 1 100%; } }
   .showcase-num { font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--teal); margin-bottom:10px; }
@@ -166,30 +182,124 @@
   .showcase-check-item { display:flex; align-items:flex-start; gap:10px; font-size:14.5px; color:var(--text-dark); font-weight:500; }
   .showcase-check-item svg { width:18px; height:18px; stroke:var(--teal); flex-shrink:0; margin-top:1px; }
 
-  /* TURN GRID — website graphic + CTA, "Your Turn" */
-  .turn-grid { display:grid; grid-template-columns:0.95fr 1.05fr; gap:56px; align-items:center; }
-  @media (max-width:860px) { .turn-grid { grid-template-columns:1fr; gap:36px; text-align:center; } }
-  .turn-showcase { background:var(--white); border-radius:var(--radius-lg); padding:10px 10px 0; box-shadow:0 24px 60px rgba(0,0,0,0.3); overflow:hidden; }
-  .turn-showcase-inner { border-radius:8px 8px 0 0; overflow:hidden; }
-  .turn-showcase img { width:100%; display:block; aspect-ratio:1253/800; object-fit:cover; object-position:top; }
-  .turn-content { text-align:left; }
-  .turn-actions { display:flex; flex-wrap:wrap; gap:12px; }
-  @media (max-width:860px) { .turn-content { text-align:center; } .turn-actions { justify-content:center; } }
+  /* SEO + AEO VENN DIAGRAM */
+  .venn-wrap { flex:1 1 46%; display:flex; align-items:center; justify-content:center; min-width:340px; }
+  .venn { position:relative; width:400px; height:280px; }
+  .venn-circle { position:absolute; top:20px; width:240px; height:240px; border-radius:50%; display:flex; align-items:center; font-family:'Sora',sans-serif; font-weight:800; font-size:24px; color:var(--white); mix-blend-mode:multiply; }
+  .venn-circle.seo { left:0; background:var(--teal); justify-content:flex-start; padding-left:44px; }
+  .venn-circle.aeo { right:0; background:var(--black); justify-content:flex-end; padding-right:44px; }
+  .venn-label-center { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:var(--white); border:1.5px solid var(--mid-grey); border-radius:100px; padding:11px 22px; font-size:13px; font-weight:700; color:var(--black); box-shadow:var(--shadow-sm); white-space:nowrap; z-index:2; }
+  @media (max-width:480px) { .venn { width:300px; height:220px; } .venn-circle { width:180px; height:180px; font-size:19px; } .venn-circle.seo { padding-left:30px; } .venn-circle.aeo { padding-right:30px; } }
+  .explainer-row { display:flex; align-items:center; gap:56px; }
+  @media (max-width:860px) { .explainer-row { flex-direction:column; gap:36px; } }
+  .explainer-content { flex:1 1 55%; min-width:0; }
+  .explainer-content p { font-size:15.5px; color:var(--text-mid); line-height:1.75; margin-bottom:16px; }
+  .explainer-content p:last-child { margin-bottom:0; }
 
-  /* 4-UP GRID (reused for "What Comes Next") */
-  .grid-4up { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:48px; align-items:stretch; }
-  @media (max-width:1180px) { .grid-4up { grid-template-columns:repeat(2,1fr); } }
-  @media (max-width:640px) { .grid-4up { grid-template-columns:1fr; } }
+  /* STATS STACK (Core Problem — paired with graphic) */
+  .stats-stack-wrap { flex:1 1 46%; min-width:0; display:flex; flex-direction:column; gap:24px; }
+  .stats-stack { display:flex; flex-direction:column; gap:14px; }
+  .stats-stack-item { display:flex; align-items:center; gap:18px; background:var(--white); border-radius:var(--radius); padding:18px 22px; box-shadow:var(--shadow-sm); }
+  .stats-stack-num { font-family:'Sora',sans-serif; font-weight:800; font-size:34px; color:var(--black); flex-shrink:0; min-width:76px; letter-spacing:-1px; }
+  .stats-stack-body p { font-size:13.5px; color:var(--text-dark); line-height:1.5; margin-bottom:4px; font-weight:500; }
+  .stats-stack-body .stat-source { color:var(--text-light); }
+  .stats-stack-wrap .stats-callout { margin:0; }
 
-  /* PAIN GRID */
-  .pain-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:48px; }
-  .pain-card { background:var(--white); border:1px solid var(--mid-grey); border-radius:var(--radius-lg); padding:28px; position:relative; overflow:hidden; transition:box-shadow 0.2s,transform 0.2s; flex:1 1 280px; max-width:340px; }
-  @media (max-width:560px) { .pain-card { flex-basis:100%; max-width:100%; } }
-  .pain-card:hover { box-shadow:var(--shadow-md); transform:translateY(-2px); }
-  .pain-icon { width:44px; height:44px; background:var(--white); color:var(--teal); border-radius:10px; display:flex; align-items:center; justify-content:center; margin-bottom:16px; box-shadow:0 4px 14px rgba(19,34,54,0.12); }
-  .pain-tag { font-size:11px; font-weight:700; letter-spacing:0.6px; text-transform:uppercase; color:var(--teal); margin-bottom:6px; }
-  .pain-card h3 { font-size:17px; font-weight:700; color:var(--black); margin-bottom:8px; letter-spacing:-0.3px; }
-  .pain-card p { font-size:15px; color:var(--text-mid); line-height:1.6; }
+  /* SPEED COMPARISON GRAPHIC */
+  .speed-card { width:100%; max-width:380px; }
+  .speed-row { margin-bottom:20px; }
+  .speed-label { display:flex; justify-content:space-between; font-size:12px; font-weight:700; color:var(--text-dark); margin-bottom:8px; }
+  .speed-bar-track { height:10px; border-radius:100px; background:var(--mid-grey); overflow:hidden; }
+  .speed-bar-fill { height:100%; border-radius:100px; }
+  .speed-bar-slow { background:var(--black); opacity:0.55; }
+  .speed-bar-fast { background:var(--teal); }
+  .speed-note { font-size:12px; color:var(--text-mid); line-height:1.5; margin-top:18px; padding-top:16px; border-top:1px solid var(--mid-grey); }
+
+  /* STATS CALLOUT — ON TEAL VARIANT */
+  .stats-callout-onteal { background:rgba(255,255,255,0.1); border-left:4px solid var(--white); color:var(--white); }
+  .stats-callout-onteal strong { color:var(--white); }
+
+  /* SERP / MAP-PACK MOCKUP (Core Problem section) */
+  .serp-mock-wrap { flex:1 1 42%; min-width:300px; }
+  .serp-mock-label { font-size:11px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,0.75); margin-bottom:14px; text-align:center; }
+  .serp-mock { background:var(--white); border-radius:var(--radius-lg); box-shadow:var(--shadow-lg); overflow:hidden; max-width:340px; margin:0 auto; }
+  .serp-search-bar { display:flex; align-items:center; gap:8px; margin:16px; padding:10px 16px; border:1.5px solid var(--mid-grey); border-radius:100px; font-size:13px; color:var(--text-dark); }
+  .serp-search-bar svg { width:15px; height:15px; stroke:var(--text-light); flex-shrink:0; }
+  .serp-map { position:relative; height:100px; margin:0 16px 14px; border-radius:10px; background:linear-gradient(135deg,#dcf3ea,#eef8f2); overflow:hidden; }
+  .serp-map-label { position:absolute; bottom:8px; left:10px; font-size:10px; font-weight:700; color:#3d7a63; }
+  .serp-map svg { position:absolute; width:20px; height:20px; fill:var(--black); opacity:0.75; }
+  .serp-result { display:flex; gap:12px; padding:12px 16px; border-top:1px solid var(--mid-grey); }
+  .serp-result-1 { background:var(--teal-mist); border-left:3px solid var(--black); border-top:none; }
+  .serp-rank { flex-shrink:0; width:22px; height:22px; border-radius:50%; background:var(--black); color:var(--white); font-family:'Sora',sans-serif; font-weight:800; font-size:11px; display:flex; align-items:center; justify-content:center; }
+  .serp-rank.muted { background:var(--mid-grey); color:var(--text-mid); }
+  .serp-result-name { font-family:'Sora',sans-serif; font-weight:700; font-size:13px; color:var(--black); display:flex; align-items:center; gap:4px; }
+  .serp-result-name svg { width:13px; height:13px; stroke:var(--teal); }
+  .serp-result-name.muted { color:var(--text-mid); font-weight:600; }
+  .serp-result-stars { color:#f6c90e; font-size:10px; letter-spacing:1px; margin:2px 0; }
+  .serp-result-meta { font-size:11px; color:var(--text-mid); }
+  .serp-mock-caption { text-align:center; font-size:13px; color:rgba(255,255,255,0.85); margin-top:18px; max-width:320px; margin-left:auto; margin-right:auto; line-height:1.6; }
+  .serp-mock-caption strong { color:var(--white); }
+
+  /* GENERIC GRAPHIC PANEL (What We Do showcase graphics) */
+  .graphic-panel { width:100%; display:flex; align-items:center; justify-content:center; padding:20px; }
+
+  /* GBP CARD MOCKUP */
+  .gbp-card { background:var(--white); border-radius:var(--radius); box-shadow:var(--shadow-md); padding:26px; width:100%; max-width:360px; }
+  .gbp-photos { display:flex; gap:6px; margin-bottom:14px; }
+  .gbp-photos span { flex:1; height:44px; border-radius:6px; display:block; }
+  .gbp-photos span:nth-child(1) { background:linear-gradient(135deg,#bfe8da,#8fd6bd); }
+  .gbp-photos span:nth-child(2) { background:linear-gradient(135deg,#a8dfcd,#6fcaa8); }
+  .gbp-photos span:nth-child(3) { background:linear-gradient(135deg,#cdeee1,#9fdcc4); }
+  .gbp-card-head { display:flex; align-items:center; gap:10px; margin-bottom:6px; }
+  .gbp-avatar { width:34px; height:34px; border-radius:50%; background:var(--teal); color:var(--white); display:flex; align-items:center; justify-content:center; font-family:'Sora',sans-serif; font-weight:800; font-size:14px; flex-shrink:0; }
+  .gbp-name { font-family:'Sora',sans-serif; font-weight:800; font-size:13.5px; color:var(--black); display:flex; align-items:center; gap:4px; }
+  .gbp-name svg { width:13px; height:13px; stroke:var(--teal); }
+  .gbp-stars { font-size:11px; color:#f6c90e; letter-spacing:1px; margin-top:2px; }
+  .gbp-stars span { color:var(--text-mid); font-weight:600; letter-spacing:0; }
+  .gbp-meta { font-size:11.5px; color:var(--text-mid); margin:10px 0 14px; }
+  .gbp-actions { display:flex; gap:8px; }
+  .gbp-btn { flex:1; text-align:center; font-size:11px; font-weight:700; padding:9px 0; border-radius:8px; background:var(--teal-mist); color:var(--teal); }
+
+  /* SUBURB RADAR MOCKUP */
+  .radar-wrap { position:relative; width:240px; height:240px; transform:scale(1.35); }
+  .radar-ring { position:absolute; border:1.5px dashed rgba(0,183,152,0.4); border-radius:50%; }
+  .radar-center { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:40px; height:40px; border-radius:50%; background:var(--teal); color:var(--white); display:flex; align-items:center; justify-content:center; font-family:'Sora',sans-serif; font-weight:800; font-size:13px; box-shadow:0 0 0 8px rgba(0,183,152,0.15); text-align:center; line-height:1.1; }
+  .radar-pin { position:absolute; background:var(--white); border:1px solid var(--mid-grey); border-radius:100px; padding:5px 11px; font-size:10.5px; font-weight:700; color:var(--black); box-shadow:var(--shadow-sm); white-space:nowrap; }
+  .radar-center { border:3px solid var(--white); }
+
+  /* NETWORK / DIGITAL PR MOCKUP */
+  .network-mock { width:100%; max-width:340px; height:auto; }
+
+  /* AEO ANSWER CARD MOCKUP */
+  .answer-card { background:var(--white); border-radius:var(--radius); box-shadow:var(--shadow-md); padding:22px; width:100%; max-width:350px; }
+  .answer-search { display:flex; align-items:center; gap:8px; background:var(--teal-mist); border-radius:100px; padding:9px 14px; font-size:11px; color:var(--text-mid); margin-bottom:12px; }
+  .answer-search svg { width:13px; height:13px; stroke:var(--text-light); flex-shrink:0; }
+  .answer-box { border-left:3px solid var(--teal); background:var(--teal-mist); border-radius:8px; padding:12px; font-size:11.5px; color:var(--text-dark); line-height:1.55; margin-bottom:12px; }
+  .answer-box strong { color:var(--black); }
+  .answer-list { display:flex; flex-direction:column; gap:8px; }
+  .answer-list-item { display:flex; gap:7px; align-items:flex-start; font-size:11px; color:var(--text-mid); line-height:1.4; }
+  .answer-list-item svg { width:13px; height:13px; stroke:var(--teal); flex-shrink:0; margin-top:1px; }
+
+  /* #1 SERP RESULT MOCKUP (mid-page CTA) */
+  .win-mock-bar { background:#f0f2f5; padding:10px 14px; display:flex; align-items:center; gap:6px; border-bottom:1px solid var(--mid-grey); }
+  .win-mock-bar .dot { width:9px; height:9px; border-radius:50%; }
+  .win-mock-bar .dot.red { background:#fc5d5b; }
+  .win-mock-bar .dot.yellow { background:#ffc130; }
+  .win-mock-bar .dot.green { background:#34c84a; }
+  .win-mock-url { flex:1; background:var(--white); border-radius:4px; padding:4px 10px; font-size:11px; color:var(--text-light); margin-left:8px; }
+  .win-mock-body { padding:26px 24px; position:relative; }
+  .win-badge { position:absolute; top:-14px; right:20px; background:#f6c90e; color:var(--black); font-family:'Sora',sans-serif; font-weight:800; font-size:12px; padding:7px 16px; border-radius:100px; box-shadow:var(--shadow-sm); transform:rotate(4deg); }
+  .win-result { display:flex; gap:14px; padding:16px 0; border-top:1px solid var(--teal-mist); }
+  .win-result:first-child { border-top:none; }
+  .win-result-top { background:var(--teal-mist); margin:0 -24px 4px; padding:16px 24px; border-left:4px solid var(--teal); border-top:none; }
+  .win-rank { flex-shrink:0; width:26px; height:26px; border-radius:50%; background:var(--teal); color:var(--white); font-family:'Sora',sans-serif; font-weight:800; font-size:12px; display:flex; align-items:center; justify-content:center; }
+  .win-rank.muted { background:var(--mid-grey); color:var(--text-mid); }
+  .win-result-name { font-family:'Sora',sans-serif; font-weight:800; font-size:15px; color:var(--black); display:flex; align-items:center; gap:5px; }
+  .win-result-name svg { width:14px; height:14px; stroke:var(--teal); }
+  .win-result-name.muted { color:var(--text-mid); font-weight:700; font-size:14px; }
+  .win-result-url { font-size:11.5px; color:var(--teal); margin:2px 0; }
+  .win-result-stars { font-size:11.5px; color:#f6c90e; margin-bottom:4px; }
+  .win-result-snippet { font-size:12.5px; color:var(--text-mid); line-height:1.5; }
 
   /* CASE STUDIES */
   .case-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:28px; margin-top:52px; }
@@ -224,17 +334,16 @@
   .audit-centered { text-align:center; max-width:760px; margin:0 auto; }
   .audit-centered .section-title { margin-bottom:16px; }
 
-  /* OUR PROCESS */
-  .process-steps { display:grid; grid-template-columns:1fr 40px 1fr 40px 1fr; align-items:start; gap:0 20px; margin-top:36px; }
-  .process-step { background:var(--white); border:1px solid var(--mid-grey); border-radius:var(--radius-lg); padding:32px 26px; }
-  .process-num { width:44px; height:44px; border-radius:12px; background:var(--teal); color:var(--white); font-family:'Sora', sans-serif; font-weight:800; font-size:18px; display:flex; align-items:center; justify-content:center; margin-bottom:18px; }
-  .process-step h3 { font-size:18px; font-weight:700; color:var(--black); margin-bottom:6px; letter-spacing:-0.2px; }
-  .process-time { display:inline-block; font-size:11px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; color:var(--teal); margin-bottom:12px; }
-  .process-step p { font-size:14px; color:var(--text-mid); line-height:1.6; }
-  .process-btn { width:100%; margin-top:20px; padding:13px 20px; font-size:14px; box-shadow:none; }
-  .process-arrow { display:flex; align-items:center; justify-content:center; color:var(--teal); opacity:0.5; padding-top:60px; }
-  .process-arrow svg { width:22px; height:22px; }
-  @media (max-width:900px) { .process-steps { grid-template-columns:1fr; gap:20px; } .process-arrow { display:none; } }
+  /* REALISTIC ROADMAP — vertical timeline */
+  .roadmap-list { max-width:760px; margin:56px auto 0; position:relative; }
+  .roadmap-list::before { content:''; position:absolute; left:23px; top:12px; bottom:12px; width:2px; background:var(--mid-grey); }
+  .roadmap-step { position:relative; display:flex; gap:24px; padding-bottom:44px; }
+  .roadmap-step:last-child { padding-bottom:0; }
+  .roadmap-num { flex-shrink:0; width:48px; height:48px; border-radius:12px; background:var(--teal); color:var(--white); font-family:'Sora',sans-serif; font-weight:800; font-size:13px; display:flex; align-items:center; justify-content:center; text-align:center; line-height:1.2; z-index:1; position:relative; }
+  .roadmap-body { padding-top:6px; }
+  .roadmap-time { display:inline-block; font-size:11px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; color:var(--teal); margin-bottom:8px; }
+  .roadmap-body h3 { font-size:18px; font-weight:700; color:var(--black); margin-bottom:8px; letter-spacing:-0.2px; }
+  .roadmap-body p { font-size:14.5px; color:var(--text-mid); line-height:1.7; }
 
   /* FAQ */
   .faq-list { max-width:1440px; margin:48px auto 0; display:grid; grid-template-columns:1fr 1fr; gap:12px 20px; align-items:start; text-align:left; }
@@ -255,6 +364,16 @@
   .areas-col h3 { font-size:18px; font-weight:700; color:var(--black); margin-bottom:12px; letter-spacing:-0.3px; }
   .areas-col p { font-size:15px; color:var(--text-mid); line-height:1.7; }
   .areas-note { max-width:760px; margin:32px auto 0; text-align:center; font-size:14.5px; color:rgba(255,255,255,0.85); line-height:1.7; }
+
+  /* TURN GRID — CTA */
+  .turn-grid { display:grid; grid-template-columns:0.95fr 1.05fr; gap:56px; align-items:center; }
+  @media (max-width:860px) { .turn-grid { grid-template-columns:1fr; gap:36px; text-align:center; } }
+  .turn-showcase { background:var(--white); border-radius:var(--radius-lg); padding:10px 10px 0; box-shadow:0 24px 60px rgba(0,0,0,0.3); overflow:hidden; }
+  .turn-showcase-inner { border-radius:8px 8px 0 0; overflow:hidden; }
+  .turn-showcase img { width:100%; display:block; aspect-ratio:1253/800; object-fit:cover; object-position:top; }
+  .turn-content { text-align:left; }
+  .turn-actions { display:flex; flex-wrap:wrap; gap:12px; }
+  @media (max-width:860px) { .turn-content { text-align:center; } .turn-actions { justify-content:center; } }
 
   /* PRE-FOOTER CTA BANNER */
   .pre-footer-cta { padding:0 0 70px; text-align:center; overflow:hidden; }
@@ -296,15 +415,15 @@
   .footer-inner { max-width:1440px; margin:0 auto; }
   .footer-top { display:flex; flex-wrap:wrap; justify-content:space-between; gap:20px; padding-bottom:56px; border-bottom:1px solid rgba(255,255,255,0.08); }
   .footer-brand-col { flex:1 1 200px; max-width:230px; }
-  .footer-links-col { flex:1 1 130px; max-width:160px; display:flex; flex-direction:column; gap:24px; }
-  .footer-contact-col { flex:1 1 170px; max-width:200px; display:flex; flex-direction:column; gap:12px; }
-  .footer-contact-link { display:flex; align-items:center; gap:10px; font-size:14px; color:rgba(255,255,255,0.55); text-decoration:none; transition:color 0.2s; overflow-wrap:anywhere; }
+  .footer-links-col { flex:1 1 130px; max-width:160px; }
+  .footer-contact-col { flex:1 1 170px; max-width:200px; }
+  .footer-contact-link { display:flex; align-items:center; gap:10px; font-size:14px; color:rgba(255,255,255,0.55); text-decoration:none; transition:color 0.2s; overflow-wrap:anywhere; margin-bottom:12px; }
   .footer-contact-link svg { width:16px; height:16px; stroke:var(--teal); flex-shrink:0; }
   .footer-contact-link:hover { color:var(--teal); }
   .footer-cta-box { flex:1 1 240px; max-width:270px; }
   .footer-brand-logo { display:flex; align-items:center; text-decoration:none; }
   .footer-brand-logo img { height:28px; width:auto; display:block; filter:brightness(0) invert(1); }
-  .footer-brand-tagline { font-size:14px; color:rgba(255,255,255,0.5); margin-top:14px; line-height:1.7; max-width:280px; }
+  .footer-brand-tagline { font-size:14px; color:rgba(255,255,255,0.5); margin-top:8px; line-height:1.7; max-width:280px; }
   .footer-socials { display:flex; gap:10px; margin-top:12px; }
   .footer-social-icon { width:38px; height:38px; border-radius:50%; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); display:flex; align-items:center; justify-content:center; transition:background 0.2s,border-color 0.2s; text-decoration:none; }
   .footer-social-icon svg { width:16px; height:16px; fill:rgba(255,255,255,0.7); }
@@ -456,10 +575,10 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://thriivdigital.com.au/wollongong-web-design/#webpage",
-    "url": "https://thriivdigital.com.au/wollongong-web-design/",
-    "name": "Wollongong Web Design | Built to Rank & Convert | thriiv",
-    "description": "Need a Wollongong web design agency that gets you leads? We build fast, mobile-first websites for Illawarra businesses — built to rank locally and convert.",
+    "@id": "https://thriivdigital.com.au/wollongong-seo/#webpage",
+    "url": "https://thriivdigital.com.au/wollongong-seo/",
+    "name": "Wollongong SEO + AEO | Rank on Google & AI Search | thriiv",
+    "description": "Wollongong SEO + AEO built to turn searches into paying customers. Dominate Google, claim the Maps 3-Pack, and become the answer AI platforms give your customers.",
     "isPartOf": { "@id": "https://thriivdigital.com.au/#organization" },
     "about": { "@id": "https://thriivdigital.com.au/#organization" },
     "inLanguage": "en-AU"
@@ -472,7 +591,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thriivdigital.com.au/" },
-      { "@type": "ListItem", "position": 2, "name": "Wollongong Web Design", "item": "https://thriivdigital.com.au/wollongong-web-design/" }
+      { "@type": "ListItem", "position": 2, "name": "Wollongong SEO + AEO", "item": "https://thriivdigital.com.au/wollongong-seo/" }
     ]
   }
   </script>
@@ -481,16 +600,16 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Website Design & Development",
-    "name": "Wollongong Web Design",
+    "serviceType": "SEO and Answer Engine Optimisation",
+    "name": "Wollongong SEO + AEO",
     "provider": { "@id": "https://thriivdigital.com.au/#organization" },
     "areaServed": {
       "@type": "City",
       "name": "Wollongong",
       "containedInPlace": { "@type": "AdministrativeArea", "name": "Illawarra, NSW" }
     },
-    "url": "https://thriivdigital.com.au/wollongong-web-design/",
-    "description": "Custom website design and development for Wollongong and Illawarra businesses, including new builds, redesigns, and high-converting landing pages — built to rank locally and convert visitors into calls."
+    "url": "https://thriivdigital.com.au/wollongong-seo/",
+    "description": "Local search engine optimisation and answer engine optimisation for Wollongong and Illawarra businesses — Google Business Profile management, suburb geotargeting, local digital PR, and content built to rank on Google and get cited by AI platforms."
   }
   </script>
 
@@ -499,23 +618,22 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "How much does a new website cost?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on the scope — a straightforward brochure-style site for a trade business is a very different job to a multi-service site for a growing professional practice. Rather than guess, we'd rather have a quick conversation about what you actually need and give you a clear, itemised quote with no hidden extras." } },
-      { "@type": "Question", "name": "Do you help with hosting and website maintenance?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, completely. Secure, fast Australian hosting is built directly into our web development plans, and through thriiv Care & Maintenance we handle ongoing content changes, security updates, and backups so your site always stays sharp and up to date." } },
-      { "@type": "Question", "name": "How long does a full website development project take?", "acceptedAnswer": { "@type": "Answer", "text": "A premium, custom website build typically takes between 1-4 weeks from onboarding to launch. That timeline lets our local team carefully craft your content, build the design, and technically optimise every page for speed and conversion." } },
-      { "@type": "Question", "name": "Why do you focus so heavily on website speed and mobile optimisation?", "acceptedAnswer": { "@type": "Answer", "text": "The vast majority of local trade and service searches happen on smartphones, often from someone who wants an issue fixed fast. If your site takes more than a couple of seconds to load, or looks clunky on a phone, prospects tap out and call your competitor instead." } },
-      { "@type": "Question", "name": "Do you force me to move my website hosting to you?", "acceptedAnswer": { "@type": "Answer", "text": "Not at all. If you already have a reliable, fast hosting provider you're happy with, we can build or optimise your website right where it is. Where your digital assets live is entirely up to you." } },
-      { "@type": "Question", "name": "Do you only work with businesses in Wollongong?", "acceptedAnswer": { "@type": "Answer", "text": "Wollongong and the surrounding Illawarra is our core focus and where most of our clients are based, but we do work with businesses further afield where it makes sense." } },
-      { "@type": "Question", "name": "Can you help if I'm not sure what I actually need?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — this is genuinely the most common starting point. A quick, free website health check is usually the fastest way to find out whether the issue is your website, your visibility, or something else entirely." } },
-      { "@type": "Question", "name": "Do you offer fixed pricing, or is every quote different?", "acceptedAnswer": { "@type": "Answer", "text": "Every website is quoted individually because the scope varies so much. Rather than publish a generic price list that doesn't apply to your situation, we'd rather have a quick conversation and give you a clear, itemised quote with no hidden extras." } },
-      { "@type": "Question", "name": "Can you redesign my existing website without losing my Google rankings?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We audit what's currently ranking and where your traffic comes from first, then carefully map redirects from your old pages to the new ones during launch. Skipping this step is the most common way businesses lose their rankings overnight during a redesign — we don't let that happen." } },
-      { "@type": "Question", "name": "I don't have a website at all — can you still help?", "acceptedAnswer": { "@type": "Answer", "text": "Completely fine. Plenty of the businesses we work with are building their first website, not replacing one. It's often simpler, since there's no legacy content to untangle and no rankings to protect during a migration." } },
-      { "@type": "Question", "name": "Do I need to already have branding, logo, or content ready before we start?", "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily. If you've already got branding and content, we'll work with what you have. If you don't, we can guide you through what's needed and help with copy and photography so you're not stuck writing your own website from scratch." } },
-      { "@type": "Question", "name": "Will my new website actually rank on Google, or is that a separate service?", "acceptedAnswer": { "@type": "Answer", "text": "Your website is built to rank — clean structure, fast load times, and local SEO signals from day one — but that's the foundation, not the finish line. Ongoing local SEO is what pushes you from page two into the map pack over time, and plenty of clients start with just the website and add SEO later." } },
-      { "@type": "Question", "name": "Do you build landing pages for Google Ads or Meta Ads campaigns?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Sending paid traffic to your homepage is usually a mistake, since homepages have too many distractions. We build focused, single-purpose landing pages matched to exactly what someone searched for, which is one of the fastest ways to lower your cost per lead." } },
-      { "@type": "Question", "name": "How many pages does my Wollongong business actually need?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on what you offer, but most Wollongong trade and service businesses land somewhere between 5 and 10 pages — home, about, individual service pages, a results or gallery page, and contact. Every extra page needs to earn its place." } },
-      { "@type": "Question", "name": "What happens after my website goes live — is that the end of the relationship?", "acceptedAnswer": { "@type": "Answer", "text": "Not at all — we treat launch as the start, not the finish. Every site comes with a care plan option so it stays fast and secure, and we're on hand for content changes whenever you need them." } },
-      { "@type": "Question", "name": "Do you build websites for industries outside of trades?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Trades and home services make up a large part of who we work with, but we also build for professional services, retail and hospitality businesses, and health and allied health practices." } },
-      { "@type": "Question", "name": "What if I've been burnt by a web design agency before?", "acceptedAnswer": { "@type": "Answer", "text": "More than a few of our clients have. You own your website and your domain from day one, full stop — nothing is held hostage, and if you ever decide to leave, you take everything with you." } }
+      { "@type": "Question", "name": "What is the main difference between SEO and AEO?", "acceptedAnswer": { "@type": "Answer", "text": "Traditional SEO focuses on optimising your website to rank as high as possible in standard search engine results pages for specific keywords. AEO (Answer Engine Optimisation) focuses on structuring your information so AI systems like ChatGPT, Google Gemini, and Apple Intelligence can easily find, synthesise, and display your business as the direct answer to conversational questions." } },
+      { "@type": "Question", "name": "Why do I need both SEO and AEO for my Wollongong business?", "acceptedAnswer": { "@type": "Answer", "text": "Because the way people look for local services is fragmenting. Plenty of people still use standard Google search, but a growing number ask conversational questions directly to voice assistants or AI apps. A combined strategy captures both groups." } },
+      { "@type": "Question", "name": "How long does it take to see measurable SEO results?", "acceptedAnswer": { "@type": "Answer", "text": "Think of search performance like fitness — you wouldn't expect one gym session to change everything overnight. Technical fixes and Google Business Profile optimisation can yield early Maps movement within 60 to 90 days, while a comprehensive campaign typically needs 6 to 12 months of sustained work to hit peak velocity and deliver compounding returns." } },
+      { "@type": "Question", "name": "Do you offer lock-in contracts?", "acceptedAnswer": { "@type": "Answer", "text": "No. We earn your partnership every month based on clear data, transparent communication, and measurable growth in leads and revenue. If you're not happy, simply cancel with 30 days' written notice." } },
+      { "@type": "Question", "name": "Can I bundle SEO with Google Ads?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — combining local SEO with targeted local Google Ads is one of our core strengths. It creates a dominant search footprint, capturing searchers who click on ads and those who click on organic map results." } },
+      { "@type": "Question", "name": "Is local hosting important for Wollongong SEO?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Speed is a primary Google ranking factor, and our hosting infrastructure keeps your site hosted in Australia, delivering fast load times for local searchers, which boosts organic rankings." } },
+      { "@type": "Question", "name": "Do I really need blog articles for my local business?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but only if they're strategic. We look at local search volume and find exactly what your Wollongong customers are asking — like how much a house extension costs in the Illawarra, or what the council approval steps are for a Shellharbour renovation — and answer those specific questions to capture high-value traffic competitors are ignoring." } },
+      { "@type": "Question", "name": "How do you optimize my website for AI search engines like ChatGPT and Gemini?", "acceptedAnswer": { "@type": "Answer", "text": "We structure your website's content so AI language models can easily read, understand, and quote your business. This involves implementing advanced schema markup (structured data), organizing content in direct Q&A formats, building conversational keyword strategies, and ensuring your business entity is verified across key authoritative web directories." } },
+      { "@type": "Question", "name": "Will AEO help my business appear in Google's AI Overviews?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Google's AI Overviews pull directly from sites that provide clear, authoritative, and structured answers to complex queries. By optimizing your site for Answer Engine Optimization (AEO), we increase the likelihood that Google's AI selects your business as a primary source in its generated search summaries." } },
+      { "@type": "Question", "name": "Do you help with Google Business Profile and Google Maps rankings?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. For local Wollongong businesses, local map rankings are essential. We fully optimize your Google Business Profile, manage local citations, build regional backlinks, and optimize your location pages to ensure you rank high in Google's Local 3-Pack." } },
+      { "@type": "Question", "name": "Do you target customers outside Wollongong, like Shellharbour or Sydney?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Whether you want to capture leads across the Illawarra, the South Coast, or expand into Greater Sydney and nationwide, we craft tailored multi-location SEO and AEO strategies to reach your target geographic regions." } },
+      { "@type": "Question", "name": "What do I need to provide to get started?", "acceptedAnswer": { "@type": "Answer", "text": "We keep onboarding simple. Once we agree on a strategy, we'll just need temporary access to your website backend, Google Analytics, and Google Search Console. If you don't have analytics set up yet, our team will handle the full configuration for you." } },
+      { "@type": "Question", "name": "How do you measure success and report on progress?", "acceptedAnswer": { "@type": "Answer", "text": "We focus on metrics that impact your bottom line — organic traffic growth, keyword rankings (both traditional and AI search citations), phone calls, and lead form submissions. You'll receive clear monthly reports and direct communication, so you always know what we're working on and how your investment is performing." } },
+      { "@type": "Question", "name": "How much do SEO and AEO services cost?", "acceptedAnswer": { "@type": "Answer", "text": "Our packages are customized based on your industry's competitiveness, your geographic target area, and your growth goals. We offer flexible monthly retainers designed specifically for local service businesses and growing brands—with no hidden fees or long lock-in contracts." } },
+      { "@type": "Question", "name": "Can you work with my existing website, or do I need a new one?", "acceptedAnswer": { "@type": "Answer", "text": "In most cases, we work directly with your existing website (WordPress, Shopify, Webflow, Squarespace, etc.). If technical issues or slow speeds are holding your rankings back, we will advise you on the necessary on-site optimisations first to make sure you get results." } },
+      { "@type": "Question", "name": "Can you guarantee a #1 ranking on Google?", "acceptedAnswer": { "@type": "Answer", "text": "No agency can ethically guarantee a #1 spot because Google constantly updates its algorithms and no one owns the search engine. What we do guarantee is a data-driven, white-hat SEO strategy built on best practices that consistently drives higher search visibility, increased traffic, and genuine local leads to your business." } }
     ]
   }
   </script>
@@ -533,7 +651,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
           <div class="nav-mega-col">
             <div class="nav-mega-col-title">Scale your customer base</div>
             <div class="nav-mega-col-sub">Get in front of ready-to-buy customers</div>
-            <a href="#" class="nav-mega-link" onclick="openAudit('thriiv Google Ads / Meta Ads'); return false;">thriiv Google Ads / Meta Ads</a>
+            <a href="#" class="nav-mega-link" onclick="openAudit('thriiv Ads'); return false;">thriiv Ads</a>
             <a href="/wollongong-web-design/" class="nav-mega-link">thriiv Website Design &amp; Development</a>
           </div>
           <div class="nav-mega-col">
@@ -582,12 +700,12 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       </div>
     </div>
 
-    <h1>Wollongong web design, built to <em>turn clicks into customers.</em></h1>
-    <p class="hero-sub">If you've landed here searching for "Wollongong web design" — you're in the right place. We design and build fast, mobile-first websites for Illawarra businesses that don't just look sharp, they're structured from day one to rank locally and convert visitors into calls, quotes, and bookings.</p>
+    <h1>Wollongong SEO + AEO, built to <em>turn searches into paying customers.</em></h1>
+    <p class="hero-sub">We bridge the gap between traditional Search Engine Optimisation and the new era of AI Answer Engines. Dominate the Illawarra Google search results, claim the local Maps 3-Pack, and make sure your business is the definitive answer when customers ask ChatGPT and Google Gemini.</p>
 
     <div class="hero-actions">
-      <a href="#" class="btn-primary" onclick="openAudit('thriiv Website Design &amp; Development'); return false;">Get a Free Website Quote →</a>
-      <a href="#case-studies" class="btn-secondary">See Our Work</a>
+      <a href="#" class="btn-primary" onclick="openHealthCheck(); return false;">Get a Free Search &amp; Answer Audit →</a>
+      <a href="/results/" class="btn-secondary">See Our Case Studies</a>
     </div>
 
     <div class="hero-stats-row fade-up">
@@ -626,8 +744,6 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       <div class="logo-item" style="margin-right:-36px;"><img src="/images/logo-sydneydrafting.webp" alt="Sydney Drafting" class="logo-img" loading="lazy" /></div>
       <div class="logo-item"><img src="/images/logo-highlands.png" alt="Highlands Cleaning" class="logo-img" loading="lazy" /></div>
       <div class="logo-item"><img src="/images/logo-southernhighlandspainters.gif" alt="Southern Highlands Painters" class="logo-img" loading="lazy" /></div>
-      <div class="logo-item"><img src="/images/sub-summit-logo.jpg" alt="Suburban Business Summit" class="logo-img" style="height:82px;" loading="lazy" /></div>
-      <div class="logo-item"><img src="/images/GCDS-logo-crop.png" alt="Growth Concept Development Services" class="logo-img" style="height:68px;" loading="lazy" /></div>
       <div class="logo-item"><img src="/images/logo-shellharbour-air-hq.png" alt="Shellharbour Airconditioning" class="logo-img" style="height:65px;" loading="lazy" /></div>
       <div class="logo-item"><img src="/images/logo-accountright-hq.png" alt="AccountRight" class="logo-img" style="height:40px;" loading="lazy" /></div>
       <div class="logo-item"><img src="/images/logo-kiama.png" alt="Kiama Cleaning" class="logo-img" loading="lazy" /></div>
@@ -640,54 +756,272 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       <div class="logo-item" style="margin-right:-36px;"><img src="/images/logo-sydneydrafting.webp" alt="Sydney Drafting" class="logo-img" loading="lazy" /></div>
       <div class="logo-item"><img src="/images/logo-highlands.png" alt="Highlands Cleaning" class="logo-img" loading="lazy" /></div>
       <div class="logo-item"><img src="/images/logo-southernhighlandspainters.gif" alt="Southern Highlands Painters" class="logo-img" loading="lazy" /></div>
-      <div class="logo-item"><img src="/images/sub-summit-logo.jpg" alt="Suburban Business Summit" class="logo-img" style="height:82px;" loading="lazy" /></div>
-      <div class="logo-item"><img src="/images/GCDS-logo-crop.png" alt="Growth Concept Development Services" class="logo-img" style="height:68px;" loading="lazy" /></div>
     </div>
   </div>
 </div>
 
-<!-- THE HARD TRUTH -->
-<section class="section section-teal">
+<!-- STATS / THE CORE PROBLEM -->
+<section class="section section-teal" style="padding-top:70px;">
   <div class="container">
-    <div class="section-label section-label-light">The Hard Truth</div>
-    <h2 class="section-title section-title-onteal">Your website could be quietly costing you the job.</h2>
-    <p class="section-sub section-sub-onteal" style="max-width:720px;">We've audited more Illawarra websites than we can count, and the same problems come up over and over. If any of these sound familiar, your website isn't neutral — it's actively working against you.</p>
-    <div class="pain-grid">
-      <div class="pain-card fade-up">
-        <div class="pain-icon"><svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
-        <div class="pain-tag">The First Impression</div>
-        <h3>It looks like it was built five years ago — because it probably was</h3>
-        <p>A dated, template-heavy site doesn't just look tired, it actively undermines trust before anyone's even picked up the phone. Wollongong customers compare you to your competitors in seconds, and a site that looks stuck in the past tells them to keep scrolling.</p>
+    <div class="audit-centered fade-up" style="margin-bottom:48px;">
+      <div class="section-label section-label-light">The Core Problem</div>
+      <h2 class="section-title section-title-onteal">Your website could be quietly losing you jobs across the Illawarra.</h2>
+    </div>
+    <div class="explainer-row">
+      <div class="serp-mock-wrap fade-up">
+        <div class="serp-mock-label">What A Typical Google Search Looks Like</div>
+        <div class="serp-mock">
+          <div class="serp-search-bar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>plumber wollongong</div>
+          <div class="serp-map">
+            <svg viewBox="0 0 24 24" style="top:20px;left:40px;"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z"/></svg>
+            <svg viewBox="0 0 24 24" style="top:44px;left:150px;"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z"/></svg>
+            <svg viewBox="0 0 24 24" style="top:14px;left:230px;"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7z"/></svg>
+            <span class="serp-map-label">Illawarra, NSW</span>
+          </div>
+          <div class="serp-result serp-result-1">
+            <div class="serp-rank">1</div>
+            <div>
+              <div class="serp-result-name">Your Business Name <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div class="serp-result-stars">★★★★★</div>
+              <div class="serp-result-meta">5.0 · 34 reviews · Plumber · Open now</div>
+            </div>
+          </div>
+          <div class="serp-result">
+            <div class="serp-rank muted">2</div>
+            <div>
+              <div class="serp-result-name muted">Competitor A</div>
+              <div class="serp-result-meta">4.2 · 11 reviews · Plumber</div>
+            </div>
+          </div>
+          <div class="serp-result">
+            <div class="serp-rank muted">3</div>
+            <div>
+              <div class="serp-result-name muted">Competitor B</div>
+              <div class="serp-result-meta">3.8 · 6 reviews · Plumber</div>
+            </div>
+          </div>
+        </div>
+        <p class="serp-mock-caption">The top 3 spots on Google Maps capture up to <strong>70%</strong> of local search clicks.</p>
       </div>
-      <div class="pain-card fade-up fade-up-delay-1">
-        <div class="pain-icon"><svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg></div>
-        <div class="pain-tag">The Invisible Website</div>
-        <h3>It was never actually built to rank</h3>
-        <p>Plenty of sites are built with no suburb references, no local schema, and no service-area structure — which gives Google no reason to show it for local searches. Your competitors show up in the map pack while you sit on page four, wondering why the phone isn't ringing.</p>
+      <div class="stats-stack-wrap fade-up fade-up-delay-1">
+        <div class="stats-stack">
+          <div class="stats-stack-item">
+            <div class="stats-stack-num">75%</div>
+            <div class="stats-stack-body">
+              <p>of users never scroll past the very first page of search results.</p>
+              <div class="stat-source">Source: HubSpot</div>
+            </div>
+          </div>
+          <div class="stats-stack-item">
+            <div class="stats-stack-num">48%</div>
+            <div class="stats-stack-body">
+              <p>of modern buyers now use AI assistants like ChatGPT and Google Gemini to research local businesses before buying.</p>
+              <div class="stat-source">Source: PayPal Consumer Commerce Research</div>
+            </div>
+          </div>
+          <div class="stats-stack-item">
+            <div class="stats-stack-num">$0</div>
+            <div class="stats-stack-body">
+              <p>is the cost per click for organic search and AI citations — no media spend, just structure and authority.</p>
+            </div>
+          </div>
+        </div>
+        <div class="stats-callout stats-callout-onteal">
+          <strong>Are you surprised?</strong> If your business isn't showing up in these searches, you're not losing to a better competitor — you're losing to the one who simply shows up first.
+        </div>
       </div>
-      <div class="pain-card fade-up fade-up-delay-2">
-        <div class="pain-icon"><svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-        <div class="pain-tag">The Slow Leak</div>
-        <h3>It loads slowly on the phone, right where your customers are searching</h3>
-        <p>The vast majority of local searches in the Illawarra happen on a mobile phone, often from someone who wants a job sorted fast. A site that takes more than a couple of seconds to load on 4G loses most visitors before the page even finishes rendering.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FROM KEYWORDS TO CONVERSATIONS -->
+<section class="section" style="background:var(--teal-mist);">
+  <div class="container">
+    <div class="explainer-row">
+      <div class="explainer-content fade-up">
+        <div class="section-label">How It Works</div>
+        <h2 class="section-title">From keywords to conversations: why SEO and AEO are two sides of the same coin.</h2>
+        <p>Plenty of agencies treat Answer Engine Optimisation as a completely separate discipline from Search Engine Optimisation. We think that's a mistake — AEO is the natural evolution of good SEO, not a different framework entirely.</p>
+        <p>Traditional SEO is about structuring your website, targeting the right keywords, and building authority so search engines can properly index your pages. AEO takes that same foundation and refines it for how modern search actually works today.</p>
+        <p>When Google shows an AI Overview at the top of a results page, or someone asks Gemini "who's the most reliable commercial electrician in Wollongong?" — those systems aren't guessing. They're pulling from technically sound, highly authoritative, schema-mapped websites.</p>
+        <p>If your foundational SEO is strong, you're already halfway to mastering AEO. Combine both, and your business shows up whether someone's scrolling Google or asking an AI assistant.</p>
       </div>
-      <div class="pain-card fade-up fade-up-delay-3">
-        <div class="pain-icon"><svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg></div>
-        <div class="pain-tag">The Dead End</div>
-        <h3>It gets visitors, but gives them nothing to actually do</h3>
-        <p>Traffic is only half the job. If your site doesn't guide people clearly toward calling, quoting, or booking — with a confusing structure or a form buried three clicks deep — it's not working for your business no matter how many people land on it.</p>
+      <div class="venn-wrap fade-up fade-up-delay-1">
+        <div class="venn">
+          <div class="venn-circle seo">SEO</div>
+          <div class="venn-circle aeo">AEO</div>
+          <div class="venn-label-center">Your Business</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DO — FOUR PILLARS -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="audit-centered">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Everything that goes into dominating Wollongong search.</h2>
+      <p class="section-sub" style="margin-left:auto;margin-right:auto;">Four connected pillars, working together so Google and AI platforms both point straight to you.</p>
+    </div>
+    <div class="showcase-row fade-up">
+      <div class="showcase-image"><div class="graphic-panel">
+        <div class="gbp-card">
+          <div class="gbp-photos"><span></span><span></span><span></span></div>
+          <div class="gbp-card-head">
+            <div class="gbp-avatar">T</div>
+            <div>
+              <div class="gbp-name">Your Business <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div class="gbp-stars">★★★★★ <span>5.0 (34)</span></div>
+            </div>
+          </div>
+          <div class="gbp-meta">Plumber · Wollongong NSW · Open now</div>
+          <div class="gbp-actions"><span class="gbp-btn">Call</span><span class="gbp-btn">Directions</span><span class="gbp-btn">Website</span></div>
+        </div>
+      </div></div>
+      <div class="showcase-content">
+        <div class="showcase-num">01 — Local Visibility</div>
+        <div class="showcase-name">Google Business Profile &amp; Maps Optimisation</div>
+        <p class="showcase-desc">The top three spots on Google Maps capture up to 70% of local search clicks. We claim, optimise, and actively manage your Google Business Profile so you rank at the very top when nearby customers search for your trade, firm, or store.</p>
+        <div class="showcase-checklist">
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Profile claimed &amp; fully optimised</div>
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Photos, categories &amp; service areas set up</div>
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Review generation built in</div>
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Ongoing ranking &amp; performance monitoring</div>
+        </div>
+        <a href="#" class="btn-primary" style="padding:14px 28px;font-size:15px;box-shadow:none;" onclick="openAudit('thriiv SEO + AEO'); return false;">Let's Thriiv →</a>
+      </div>
+    </div>
+
+    <div class="showcase-row reverse fade-up fade-up-delay-1">
+      <div class="showcase-image"><div class="graphic-panel">
+        <div class="radar-wrap">
+          <div class="radar-ring" style="inset:0;"></div>
+          <div class="radar-ring" style="inset:34px;"></div>
+          <div class="radar-ring" style="inset:68px;"></div>
+          <div class="radar-center">You</div>
+          <div class="radar-pin" style="top:6px;left:50%;transform:translate(-50%,0);">Thirroul</div>
+          <div class="radar-pin" style="top:76px;right:0;">Fairy Meadow</div>
+          <div class="radar-pin" style="bottom:76px;right:0;">Corrimal</div>
+          <div class="radar-pin" style="bottom:6px;left:50%;transform:translate(-50%,0);">Dapto</div>
+          <div class="radar-pin" style="bottom:76px;left:0;">Shellharbour</div>
+          <div class="radar-pin" style="top:76px;left:0;">Kiama</div>
+        </div>
+      </div></div>
+      <div class="showcase-content">
+        <div class="showcase-num">02 — Geotargeting</div>
+        <div class="showcase-name">Target Suburb Geotargeting</div>
+        <p class="showcase-desc">Whether you want to dominate searches in Thirroul, Fairy Meadow, Corrimal, or Dapto, we structure your website content with precision local targeting — so Google understands exactly who you are, what you do, and which suburbs you actually serve.</p>
+        <div class="showcase-checklist">
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Suburb-specific landing content</div>
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Local schema &amp; geo-tagging</div>
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Service-area pages that convert</div>
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Precision targeting, not guesswork</div>
+        </div>
+        <a href="#" class="btn-primary" style="padding:14px 28px;font-size:15px;box-shadow:none;" onclick="openAudit('thriiv SEO + AEO'); return false;">Let's Thriiv →</a>
+      </div>
+    </div>
+
+    <div class="showcase-row fade-up fade-up-delay-2">
+      <div class="showcase-image"><div class="graphic-panel">
+        <svg class="network-mock" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+          <line x1="120" y1="120" x2="120" y2="25" stroke="#00b798" stroke-width="1.5" stroke-dasharray="3 4"/>
+          <line x1="120" y1="120" x2="210" y2="91" stroke="#00b798" stroke-width="1.5" stroke-dasharray="3 4"/>
+          <line x1="120" y1="120" x2="176" y2="197" stroke="#00b798" stroke-width="1.5" stroke-dasharray="3 4"/>
+          <line x1="120" y1="120" x2="64" y2="197" stroke="#00b798" stroke-width="1.5" stroke-dasharray="3 4"/>
+          <line x1="120" y1="120" x2="30" y2="91" stroke="#00b798" stroke-width="1.5" stroke-dasharray="3 4"/>
+          <circle cx="120" cy="120" r="28" fill="#00b798"/>
+          <text x="120" y="124" text-anchor="middle" font-family="Sora, sans-serif" font-weight="800" font-size="11" fill="#ffffff">YOU</text>
+          <circle cx="120" cy="25" r="19" fill="#ffffff" stroke="#e5e8ec" stroke-width="1.5"/>
+          <circle cx="210" cy="91" r="19" fill="#ffffff" stroke="#e5e8ec" stroke-width="1.5"/>
+          <circle cx="176" cy="197" r="19" fill="#ffffff" stroke="#e5e8ec" stroke-width="1.5"/>
+          <circle cx="64" cy="197" r="19" fill="#ffffff" stroke="#e5e8ec" stroke-width="1.5"/>
+          <circle cx="30" cy="91" r="19" fill="#ffffff" stroke="#e5e8ec" stroke-width="1.5"/>
+          <text x="120" y="60" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="9.5" fill="#4a5568">Directory</text>
+          <text x="210" y="126" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="9.5" fill="#4a5568">Industry Body</text>
+          <text x="176" y="231" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="9.5" fill="#4a5568">Regional News</text>
+          <text x="64" y="231" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="9.5" fill="#4a5568">Community</text>
+          <text x="30" y="126" text-anchor="middle" font-family="DM Sans, sans-serif" font-size="9.5" fill="#4a5568">Partners</text>
+        </svg>
+      </div></div>
+      <div class="showcase-content">
+        <div class="showcase-num">03 — Authority</div>
+        <div class="showcase-name">Off-Page Digital PR &amp; Local Authority Building</div>
+        <p class="showcase-desc">Hyper-local authority is the secret weapon for Wollongong rankings. AI engines and search algorithms look for external validation, so we secure quality backlinks from respected Illawarra directories, industry bodies, regional news, and community organisations.</p>
+        <div class="showcase-checklist">
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Illawarra directory listings</div>
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Industry body backlinks</div>
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Regional news &amp; PR outreach</div>
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Community organisation partnerships</div>
+        </div>
+        <a href="#" class="btn-primary" style="padding:14px 28px;font-size:15px;box-shadow:none;" onclick="openAudit('thriiv SEO + AEO'); return false;">Let's Thriiv →</a>
+      </div>
+    </div>
+
+    <div class="showcase-row reverse fade-up fade-up-delay-3">
+      <div class="showcase-image"><div class="graphic-panel">
+        <div class="answer-card">
+          <div class="answer-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>house extension cost illawarra</div>
+          <div class="answer-box"><strong>AI Overview:</strong> Based on thriiv Digital's local cost guide, a typical Illawarra house extension ranges from...</div>
+          <div class="answer-list">
+            <div class="answer-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Council approval steps for Shellharbour</div>
+            <div class="answer-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Average renovation costs by suburb</div>
+            <div class="answer-list-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Choosing a licensed local builder</div>
+          </div>
+        </div>
+      </div></div>
+      <div class="showcase-content">
+        <div class="showcase-num">04 — Content</div>
+        <div class="showcase-name">Content &amp; Authority Marketing</div>
+        <p class="showcase-desc">Google doesn't just rank websites, it ranks authorities. We research, write, and publish strategic local content and service guides that answer the exact questions your Wollongong customers are already searching for — building trust before they've even called.</p>
+        <div class="showcase-checklist">
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Long-tail Q&amp;A content</div>
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>AI-citation-ready formatting</div>
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Topical authority building</div>
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Blog &amp; service guide writing</div>
+        </div>
+        <a href="#" class="btn-primary" style="padding:14px 28px;font-size:15px;box-shadow:none;" onclick="openAudit('thriiv SEO + AEO'); return false;">Let's Thriiv →</a>
+      </div>
+    </div>
+
+    <div class="showcase-row fade-up">
+      <div class="showcase-image"><div class="graphic-panel">
+        <div class="speed-card">
+          <div class="speed-row">
+            <div class="speed-label"><span>Average mobile site</span><span>8.6s</span></div>
+            <div class="speed-bar-track"><div class="speed-bar-fill speed-bar-slow" style="width:100%;"></div></div>
+          </div>
+          <div class="speed-row">
+            <div class="speed-label"><span>thriiv-built sites</span><span>&lt;2s</span></div>
+            <div class="speed-bar-track"><div class="speed-bar-fill speed-bar-fast" style="width:23%;"></div></div>
+          </div>
+          <div class="speed-note">53% of mobile visitors abandon a page that takes longer than 3 seconds to load.<span class="stat-source" style="display:block;margin-top:6px;">Source: Google Mobile Performance Study / WP Rocket</span></div>
+        </div>
+      </div></div>
+      <div class="showcase-content">
+        <div class="showcase-num">05 — Speed</div>
+        <div class="showcase-name">Core Web Vitals &amp; Site Speed</div>
+        <p class="showcase-desc">Every SEO + AEO campaign starts with fixing Core Web Vitals — because no amount of content or backlinks matters if visitors bounce before the page even loads. The average mobile page still takes 8.6 seconds to load; we build for under 2.</p>
+        <div class="showcase-checklist">
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Core Web Vitals audit &amp; fixes</div>
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Image &amp; code optimisation</div>
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Sub-2-second load times</div>
+          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Ongoing speed monitoring</div>
+        </div>
+        <a href="#" class="btn-primary" style="padding:14px 28px;font-size:15px;box-shadow:none;" onclick="openAudit('thriiv SEO + AEO'); return false;">Let's Thriiv →</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CASE STUDIES -->
-<section class="section" id="case-studies">
+<section class="section" id="case-studies" style="background:var(--teal-mist);">
   <div class="container">
     <div class="audit-centered">
       <div class="section-label">Real Results</div>
-      <h2 class="section-title">Real Wollongong websites, real results.</h2>
-      <p class="section-sub" style="margin-left:auto;margin-right:auto;">Not mockups or stock templates — actual local businesses whose websites went from a liability to their hardest-working employee.</p>
+      <h2 class="section-title">Real Wollongong SEO results.</h2>
+      <p class="section-sub" style="margin-left:auto;margin-right:auto;">Not projections or industry averages — actual local businesses whose local search visibility went from invisible to their hardest-working salesperson.</p>
     </div>
     <div class="case-grid">
 
@@ -713,8 +1047,8 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
             <div class="case-row-item"><span class="label">Solution</span><span>Local SEO overhaul plus lead intelligence to give a heads-up on the enquiry before they even picked up the phone</span></div>
           </div>
           <div class="case-stat">
-            <div class="case-stat-num">2-3</div>
-            <div class="case-stat-text">New leads every single day<br><span style="font-size:11px;opacity:0.75;">Plus 405+ search terms ranking page one</span></div>
+            <div class="case-stat-num">405+</div>
+            <div class="case-stat-text">Search terms ranking page one<br><span style="font-size:11px;opacity:0.75;">Plus 2-3 new leads every single day</span></div>
           </div>
           <div class="case-tag-row">
             <span class="case-tag">Local SEO</span>
@@ -724,8 +1058,41 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
         </div>
       </div>
 
-      <!-- Card 2: Kiama Cleaning -->
-      <div class="case-card fade-up fade-up-delay-1" style="--scroll-distance: -1165px;">
+      <!-- Card 2: ResolvedIT -->
+      <div class="case-card fade-up fade-up-delay-1" style="--scroll-distance: -1075px;">
+        <div class="case-browser-frame">
+          <div class="case-browser-inner">
+            <div class="case-browser-bar">
+              <div class="browser-dot red"></div>
+              <div class="browser-dot yellow"></div>
+              <div class="browser-dot green"></div>
+              <span class="browser-url-text">resolvedit.com.au</span>
+            </div>
+            <div class="case-scroll-viewport">
+              <img src="/images/scroll-resolvedit.png" alt="ResolvedIT website" class="case-scroll-img" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="case-body">
+          <h3>ResolvedIT</h3>
+          <div class="case-row">
+            <div class="case-row-item"><span class="label">Problem</span><span>Struggling to stand out locally against bigger, better-funded IT providers</span></div>
+            <div class="case-row-item"><span class="label">Solution</span><span>New website build plus hyper-local SEO targeting across every suburb they service</span></div>
+          </div>
+          <div class="case-stat">
+            <div class="case-stat-num">#1</div>
+            <div class="case-stat-text">Position across every key<br>targeted suburb</div>
+          </div>
+          <div class="case-tag-row">
+            <span class="case-tag">Website Design</span>
+            <span class="case-tag">Local SEO</span>
+            <span class="case-tag">Support &amp; Maintenance</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Kiama Cleaning -->
+      <div class="case-card fade-up fade-up-delay-2" style="--scroll-distance: -1165px;">
         <div class="case-browser-frame">
           <div class="case-browser-inner">
             <div class="case-browser-bar">
@@ -743,7 +1110,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
           <h3>Kiama Cleaning</h3>
           <div class="case-row">
             <div class="case-row-item"><span class="label">Problem</span><span>No website and relying entirely on word of mouth for new jobs</span></div>
-            <div class="case-row-item"><span class="label">Solution</span><span>Brand new website, Local SEO, and AI missed-call text-back so no new enquiry goes unanswered</span></div>
+            <div class="case-row-item"><span class="label">Solution</span><span>Brand new website plus Local SEO, so search visibility replaced word-of-mouth as the main lead source</span></div>
           </div>
           <div class="case-stat">
             <div class="case-stat-num">30+</div>
@@ -751,40 +1118,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
           </div>
           <div class="case-tag-row">
             <span class="case-tag">Website Design</span>
-            <span class="case-tag">Missed-Call Text-Back</span>
             <span class="case-tag">Local SEO</span>
-            <span class="case-tag">Support &amp; Maintenance</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3: Growth Concept Development Services -->
-      <div class="case-card fade-up fade-up-delay-2" style="--scroll-distance: -1521px;">
-        <div class="case-browser-frame">
-          <div class="case-browser-inner">
-            <div class="case-browser-bar">
-              <div class="browser-dot red"></div>
-              <div class="browser-dot yellow"></div>
-              <div class="browser-dot green"></div>
-              <span class="browser-url-text">growthcds.com.au</span>
-            </div>
-            <div class="case-scroll-viewport">
-              <img src="/images/growth-cds-full.png" alt="Growth Concept Development Services website" class="case-scroll-img" loading="lazy" />
-            </div>
-          </div>
-        </div>
-        <div class="case-body">
-          <h3>Growth Concept Development Services</h3>
-          <div class="case-row">
-            <div class="case-row-item"><span class="label">Problem</span><span>A 48-hour deadline before their site went offline for good — worsened by a decade of hidden Google visibility issues</span></div>
-            <div class="case-row-item"><span class="label">Solution</span><span>A rapid full rebuild that saved their online presence and got them fully live and indexed on Google again</span></div>
-          </div>
-          <div class="case-stat">
-            <div class="case-stat-num">48 hrs</div>
-            <div class="case-stat-text">Emergency build and<br>deployment completed</div>
-          </div>
-          <div class="case-tag-row">
-            <span class="case-tag">Website Design</span>
             <span class="case-tag">Support &amp; Maintenance</span>
           </div>
         </div>
@@ -797,110 +1131,46 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
   </div>
 </section>
 
-<!-- WHAT WE DO -->
-<section class="section" id="services" style="background:var(--teal-mist);">
-  <div class="container">
-    <div class="audit-centered">
-      <div class="section-label">What We Do</div>
-      <h2 class="section-title">Everything that goes into a website that actually works.</h2>
-      <p class="section-sub" style="margin-left:auto;margin-right:auto;">One local team designs, builds, and looks after your site — not a freelancer for design, another for code, and a third for maintenance that quietly falls through the cracks.</p>
-    </div>
-    <div class="showcase-row fade-up">
-      <div class="showcase-image"><img src="/images/scroll-accountright.webp" alt="AccountRight website, built by thriiv Digital" loading="lazy" /></div>
-      <div class="showcase-content">
-        <div class="showcase-num">01 — Core Service</div>
-        <div class="showcase-name">Custom Website Design &amp; Build</div>
-        <p class="showcase-desc">Every site is hand-built from wireframes and design through to development and launch — no drag-and-drop templates. That means faster load times, cleaner structure, and a site set up to turn visitors into enquiries from the day it goes live.</p>
-        <div class="showcase-checklist">
-          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Wireframes &amp; site planning</div>
-          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Custom design, desktop &amp; mobile</div>
-          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Full development &amp; launch</div>
-          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Structured to convert from day one</div>
-        </div>
-        <a href="#" class="btn-primary" style="padding:14px 28px;font-size:15px;box-shadow:none;" onclick="openAudit('thriiv Website Design &amp; Development'); return false;">Let's Thriiv →</a>
-      </div>
-    </div>
-
-    <div class="showcase-row reverse fade-up fade-up-delay-1">
-      <div class="showcase-image"><img src="/images/scroll-shellharbourac.webp" alt="Shellharbour Airconditioning website, built by thriiv Digital" loading="lazy" /></div>
-      <div class="showcase-content">
-        <div class="showcase-num">02 — Redesigns</div>
-        <div class="showcase-name">Website Redesigns</div>
-        <p class="showcase-desc">If your current site is slow, dated, or embarrassing to send a customer to, we'll audit it first — what's ranking, where traffic comes from, and what's not converting — then rebuild it properly, carefully protecting the rankings you've already earned.</p>
-        <div class="showcase-checklist">
-          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Full site &amp; SEO audit first</div>
-          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Careful redirect mapping</div>
-          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Rankings protected during migration</div>
-          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>A fresh, on-brand design</div>
-        </div>
-        <a href="#" class="btn-primary" style="padding:14px 28px;font-size:15px;box-shadow:none;" onclick="openAudit('thriiv Website Design &amp; Development'); return false;">Let's Thriiv →</a>
-      </div>
-    </div>
-
-    <div class="showcase-row fade-up fade-up-delay-2">
-      <div class="showcase-image"><img src="/images/scroll-plumbing.webp" alt="Illawarra Plumbing Co website, built by thriiv Digital" loading="lazy" /></div>
-      <div class="showcase-content">
-        <div class="showcase-num">03 — Paid Traffic</div>
-        <div class="showcase-name">High-Converting Landing Pages</div>
-        <p class="showcase-desc">Running Google or Meta ads? A generic homepage isn't built for that traffic. We build focused, single-purpose landing pages matched to exactly what someone searched for, designed to turn a click into a call.</p>
-        <div class="showcase-checklist">
-          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Matched to your campaign</div>
-          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Mobile-first design</div>
-          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Built to convert clicks into calls</div>
-        </div>
-        <a href="#" class="btn-primary" style="padding:14px 28px;font-size:15px;box-shadow:none;" onclick="openAudit('thriiv Website Design &amp; Development'); return false;">Let's Thriiv →</a>
-      </div>
-    </div>
-
-    <div class="showcase-row reverse fade-up fade-up-delay-3">
-      <div class="showcase-image"><img src="/images/scroll-resolvedit.png" alt="ResolvedIT website, built by thriiv Digital" loading="lazy" /></div>
-      <div class="showcase-content">
-        <div class="showcase-num">04 — Ongoing</div>
-        <div class="showcase-name">thriiv Care &amp; Maintenance</div>
-        <p class="showcase-desc">Launch day isn't the finish line. We handle Australian hosting, daily backups, security updates, and speed optimisation, plus hands-on support whenever you need a content change made — so your site stays sharp without you lifting a finger.</p>
-        <div class="showcase-checklist">
-          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Australian hosting &amp; daily backups</div>
-          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Security updates &amp; speed checks</div>
-          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Content updates on request</div>
-          <div class="showcase-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Monthly plain-English reporting</div>
-        </div>
-        <a href="#" class="btn-primary" style="padding:14px 28px;font-size:15px;box-shadow:none;" onclick="openAudit('thriiv Care &amp; Maintenance'); return false;">Let's Thriiv →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- OUR PROCESS -->
-<section class="section" id="process">
+<!-- THE REALISTIC ROADMAP -->
+<section class="section" id="roadmap">
   <div class="container">
     <div class="audit-centered fade-up">
-      <div class="section-label">Our Process</div>
-      <h2 class="section-title">From "embarrassing" to "on brand" in as little as a week.</h2>
-      <p class="section-sub" style="margin:0 auto;">Getting started takes less than 5 minutes. No complex onboarding, no endless paperwork — just a clear path to a website that works.</p>
+      <div class="section-label">The Realistic Roadmap</div>
+      <h2 class="section-title">From "invisible" to the market leader in 12 months.</h2>
+      <p class="section-sub" style="margin:0 auto;">Search and answer engine optimisation are compounding, long-term assets. Anyone promising overnight rankings is running high-risk tactics that can get your site penalised — here's a realistic look at what to expect.</p>
     </div>
-    <div class="process-steps">
-      <div class="process-step fade-up">
-        <div class="process-num">1</div>
-        <h3>Get Your Free Website Audit</h3>
-        <span class="process-time">Takes 2 minutes</span>
-        <p>Fill out our quick enquiry form. Our local team will manually look under the hood of your current website — speed, mobile experience, and local rankings — to find exactly what's costing you enquiries, completely free.</p>
-        <a href="#" class="btn-primary process-btn" onclick="openHealthCheck(); return false;">Get Your Free Website Audit</a>
+    <div class="roadmap-list">
+      <div class="roadmap-step fade-up">
+        <div class="roadmap-num">1–2</div>
+        <div class="roadmap-body">
+          <span class="roadmap-time">Months 1–2 · Foundation &amp; Fixes</span>
+          <h3>Getting the fundamentals right</h3>
+          <p>Full technical site crawl, Core Web Vitals optimisation, local schema deployment, and comprehensive Google Business Profile configuration.</p>
+        </div>
       </div>
-      <div class="process-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-      <div class="process-step fade-up fade-up-delay-1">
-        <div class="process-num">2</div>
-        <h3>The Discovery Call</h3>
-        <span class="process-time">20-Minute Strategy Session</span>
-        <p>We'll pinpoint exactly where your current site is losing leads and talk through what you actually need — no high-pressure pitch, just a straight conversation about the right fit and a clear, itemised quote.</p>
-        <a href="#" class="btn-secondary process-btn" onclick="openCalendly(); return false;">Book a 20-Min Strategy Call</a>
+      <div class="roadmap-step fade-up fade-up-delay-1">
+        <div class="roadmap-num">3–4</div>
+        <div class="roadmap-body">
+          <span class="roadmap-time">Months 3–4 · Early Traction</span>
+          <h3>The first movement</h3>
+          <p>First batch of targeted long-tail Q&amp;A content goes live. Early movement on low-competition local search terms, and Google Maps visibility starts expanding.</p>
+        </div>
       </div>
-      <div class="process-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-      <div class="process-step fade-up fade-up-delay-2">
-        <div class="process-num">3</div>
-        <h3>Design, Build &amp; Launch</h3>
-        <span class="process-time">Typically 1-4 weeks</span>
-        <p>Once we're a great fit, our local team designs, builds, and launches your new site — structured to rank locally and convert visitors from day one, with you signing off at every stage.</p>
-        <a href="/results/" class="btn-secondary process-btn">See Our Results</a>
+      <div class="roadmap-step fade-up fade-up-delay-2">
+        <div class="roadmap-num">5–7</div>
+        <div class="roadmap-body">
+          <span class="roadmap-time">Months 5–7 · Market Acceleration</span>
+          <h3>Momentum builds</h3>
+          <p>Mid-competition commercial keywords break onto page one. AI engines begin referencing your content for conversational queries, with a measurable lift in organic calls and quote forms.</p>
+        </div>
+      </div>
+      <div class="roadmap-step fade-up fade-up-delay-3">
+        <div class="roadmap-num">8–12</div>
+        <div class="roadmap-body">
+          <span class="roadmap-time">Months 8–12 · Compounding Domination</span>
+          <h3>The moat forms</h3>
+          <p>Primary local commercial terms reach top organic positions. Your website forms a defensible competitive moat around the most profitable search terms in the Illawarra.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -911,54 +1181,48 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
   <div class="container">
     <div class="audit-centered">
       <div class="section-label section-label-light">Who We Work With</div>
-      <h2 class="section-title section-title-onteal">Wollongong web design for every corner of the Illawarra.</h2>
+      <h2 class="section-title section-title-onteal">Wollongong SEO + AEO for every corner of the Illawarra.</h2>
     </div>
     <div class="areas-grid">
       <div class="areas-col">
-        <h3>Suburbs we service</h3>
-        <p>We build websites for businesses right across the Illawarra, from North Wollongong down to Shellharbour and Kiama, and inland through Dapto, Albion Park, and the Southern Highlands fringe. If you're based in Wollongong, Fairy Meadow, Corrimal, Bulli, Thirroul, Woonona, Port Kembla, Warrawong, Unanderra, Figtree, Mount Ousley, Wollongong CBD, Berkeley, Shellharbour City, Warilla, Albion Park, Dapto, or anywhere in between, there's a good chance we've already built a site for a business near you — and we understand exactly how local customers in that suburb search, compare, and decide who to call.</p>
+        <h3>Suburbs we target</h3>
+        <p>We build SEO + AEO campaigns for businesses right across the Illawarra, from North Wollongong down to Shellharbour and Kiama, and inland through Dapto, Albion Park, and the Southern Highlands fringe. Whether you're in Wollongong CBD, Fairy Meadow, Corrimal, Bulli, Thirroul, Woonona, Port Kembla, Warrawong, Unanderra, Figtree, Berkeley, Shellharbour City, Warilla, or Albion Park, we understand exactly how local customers in that suburb search, compare, and decide who to call — and we build your geotargeting strategy around it.</p>
       </div>
       <div class="areas-col">
         <h3>Industries we work with</h3>
-        <p>Tradies make up a large part of who we work with — plumbers, electricians, air conditioning and heating specialists, builders, roofers, landscapers, and pest control operators, all businesses where a slow-loading site translates directly into a lost job. We also build for professional services — accountants, bookkeepers, financial planners, solicitors, and consultants — where trust and credibility matter as much as visibility. Beyond that, we build for retail and hospitality businesses, health and allied health practices, and a growing number of trades and service businesses who want to stop losing work to competitors with a better website.</p>
+        <p>Tradies make up a large part of who we work with — plumbers, electricians, air conditioning and heating specialists, builders, roofers, and pest control operators, all businesses where a missing Maps listing translates directly into a lost job. We also run SEO + AEO for professional services like accountants, solicitors, and consultants, plus retail, hospitality, and health and allied health practices who want to stop losing enquiries to competitors who simply show up first.</p>
       </div>
     </div>
-    <p class="areas-note">If your industry or suburb isn't listed here, it doesn't mean we haven't built for a business like yours — it just means this page can't list everything. The principles stay the same regardless of what you do: a fast, trustworthy website, structured to rank where your customers are searching.</p>
+    <p class="areas-note">If your industry or suburb isn't listed here, it doesn't mean we haven't worked with a business like yours — it just means this page can't list everything. The principles stay the same: technically sound, highly authoritative, and structured to be found wherever your customers are searching.</p>
   </div>
 </section>
 
-<!-- WHAT COMES NEXT -->
+<!-- RELATED SERVICES -->
 <section class="section">
   <div class="container">
     <div class="audit-centered">
-      <div class="section-label">What Comes Next</div>
-      <h2 class="section-title">A great website is the start line, not the finish line.</h2>
-      <p class="section-sub" style="margin-left:auto;margin-right:auto;">Your new site is the foundation, but ranking and generating leads takes more than good code. When you're ready to go further, we're already set up to build on it — no new agency, no re-explaining your business.</p>
+      <div class="section-label">Related Services</div>
+      <h2 class="section-title">The fast lane while your rankings compound.</h2>
+      <p class="section-sub" style="margin-left:auto;margin-right:auto;">SEO + AEO is the long game. These three services help you capture leads right now while your organic authority builds.</p>
     </div>
-    <div class="grid-4up">
+    <div class="grid-3up">
       <div class="solution-card fade-up">
-        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-        <div class="solution-name" style="font-size:16px;">thriiv SEO + AEO</div>
-        <p class="solution-desc" style="font-size:13.5px;">Dominate local search and get found in AI search, not just Google.</p>
-        <a href="/wollongong-seo/" class="solution-learn">Learn more →</a>
+        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <div class="solution-name">thriiv Ads</div>
+        <p class="solution-desc">Need leads instantly while your organic authority compounds? We build hyper-targeted Google &amp; Meta ad campaigns that capture ready-to-buy customers right now.</p>
+        <a href="#" class="solution-learn" onclick="openAudit('thriiv Ads'); return false;">Learn more →</a>
       </div>
       <div class="solution-card fade-up fade-up-delay-1">
-        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
-        <div class="solution-name" style="font-size:16px;">thriiv Google Ads / Meta Ads</div>
-        <p class="solution-desc" style="font-size:13.5px;">Put your new site in front of ready-to-buy customers right away.</p>
-        <a href="/#service-ads" class="solution-learn">Learn more →</a>
+        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <div class="solution-name">Custom Web Design &amp; UX</div>
+        <p class="solution-desc">A beautiful website is useless if it doesn't convert traffic. We build lightning-fast, conversion-optimised sites that turn your new search visitors into qualified leads.</p>
+        <a href="/wollongong-web-design/" class="solution-learn">Learn more →</a>
       </div>
       <div class="solution-card fade-up fade-up-delay-2">
-        <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-        <div class="solution-name" style="font-size:16px;">thriiv Lead Automation</div>
-        <p class="solution-desc" style="font-size:13.5px;">Instant text-backs and lead routing so a new enquiry never goes cold.</p>
-        <a href="/#service-lead-automation" class="solution-learn">Learn more →</a>
-      </div>
-      <div class="solution-card fade-up fade-up-delay-3">
         <div class="solution-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-        <div class="solution-name" style="font-size:16px;">thriiv Reviews</div>
-        <p class="solution-desc" style="font-size:13.5px;">Automated review requests that build trust and rank you higher on Google.</p>
-        <a href="/#service-reviews" class="solution-learn">Learn more →</a>
+        <div class="solution-name">Review &amp; Reputation Automation</div>
+        <p class="solution-desc">Positive reviews are a major ranking factor for both the Maps pack and AI trust metrics. We automate collecting 5-star reviews from happy customers, completely effortlessly.</p>
+        <a href="#" class="solution-learn" onclick="openAudit('thriiv Reviews'); return false;">Learn more →</a>
       </div>
     </div>
   </div>
@@ -970,16 +1234,42 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
     <div class="turn-grid">
       <div class="turn-showcase fade-up">
         <div class="turn-showcase-inner">
-          <img src="/images/growth-cds-full.png" alt="Growth Concept Development Services website, built by thriiv Digital" loading="lazy" />
+          <div class="win-mock-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="win-mock-url">google.com/search?q=plumber+wollongong</span></div>
+          <div class="win-mock-body">
+            <div class="win-badge">🏆 #1</div>
+            <div class="win-result win-result-top">
+              <div class="win-rank">1</div>
+              <div>
+                <div class="win-result-name">Your Business Name <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                <div class="win-result-url">yourbusiness.com.au</div>
+                <div class="win-result-stars">★★★★★ 5.0 · 128 reviews</div>
+                <div class="win-result-snippet">Trusted local plumber serving Wollongong &amp; the Illawarra. Fast quotes, 24/7 emergency callouts...</div>
+              </div>
+            </div>
+            <div class="win-result">
+              <div class="win-rank muted">2</div>
+              <div>
+                <div class="win-result-name muted">Competitor A</div>
+                <div class="win-result-url">competitor-a.com.au</div>
+              </div>
+            </div>
+            <div class="win-result">
+              <div class="win-rank muted">3</div>
+              <div>
+                <div class="win-result-name muted">Competitor B</div>
+                <div class="win-result-url">competitor-b.com.au</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="turn-content fade-up fade-up-delay-1">
-        <div class="section-label section-label-light">Your Turn</div>
-        <h2 class="section-title section-title-onteal">Ready to fix your Wollongong website?</h2>
-        <p class="section-sub section-sub-onteal" style="max-width:520px;margin:0 0 32px;">Get a free, no-obligation website health check and we'll tell you three things to fix today — or skip straight to a quote if you already know a rebuild is on the cards.</p>
+        <div class="section-label section-label-light">We Want To See You #1</div>
+        <h2 class="section-title section-title-onteal">Stop letting your competitors claim the best leads in the Illawarra.</h2>
+        <p class="section-sub section-sub-onteal" style="max-width:520px;margin:0 0 32px;">Let's audit your current digital footprint — search and AI visibility both — and show you exactly where your growth opportunities lie.</p>
         <div class="turn-actions">
-          <a href="#" class="btn-dark" onclick="openHealthCheck(); return false;">Get My Free Health Check →</a>
-          <a href="#" class="btn-secondary btn-outline-onteal" onclick="openAudit('thriiv Website Design &amp; Development'); return false;">Get a Quote Instead →</a>
+          <a href="#" class="btn-dark" onclick="openHealthCheck(); return false;">Claim Your Free Search &amp; AI Audit →</a>
+          <a href="#" class="btn-secondary btn-outline-onteal" onclick="openCalendly(); return false;">Speak to an Illawarra Specialist →</a>
         </div>
       </div>
     </div>
@@ -990,75 +1280,71 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 <section class="section" id="faq">
   <div class="container" style="text-align:center">
     <div class="section-label">FAQs</div>
-    <h2 class="section-title">Wollongong web design — your questions, answered.</h2>
+    <h2 class="section-title">Wollongong SEO + AEO — your questions answered.</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">How much does a new website cost?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">It depends on the scope — a straightforward brochure-style site for a trade business is a very different job to a multi-service site for a growing professional practice. Rather than guess, we'd rather have a quick conversation about what you actually need and give you a clear, itemised quote with no hidden extras.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">What is the main difference between SEO and AEO?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a">Traditional SEO focuses on optimising your website to rank as high as possible in standard search engine results pages for specific keywords. AEO (Answer Engine Optimisation) focuses on structuring your information so AI systems like ChatGPT, Google Gemini, and Apple Intelligence can easily find, synthesise, and display your business as the direct answer to conversational questions.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Do you offer fixed pricing, or is every quote different?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">Every website is quoted individually because the scope varies so much. Rather than publish a generic price list that doesn't actually apply to your situation, we'd rather have a quick conversation and give you a clear, itemised quote with no hidden extras and no surprise invoices later.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">Why do I need both for my Wollongong business?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a">Because the way people look for local services is fragmenting. While plenty of people still use standard Google search, a growing number ask conversational questions directly to voice assistants or AI apps. Running a combined strategy captures both demographics properly.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">How long does a full website development project take?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">A premium, custom website build typically takes between 1-4 weeks from onboarding to launch. That timeline lets our local team carefully craft your content, build the design, and technically optimise every single page for speed and conversion performance.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">How long does it take to see measurable results?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a">Think of search performance like physical fitness — you wouldn't expect to hit the gym once and instantly transform. It takes consistent, structured effort over time. Technical fixes and Google Business Profile optimisation can yield early Maps movement within the first 60 to 90 days, while a comprehensive campaign typically needs 6 to 12 months of sustained work to hit peak velocity and deliver a compounding return.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">I don't have a website at all — can you still help?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">Completely fine — plenty of the businesses we work with are building their first website, not replacing one. If anything, it's simpler: there's no legacy content to untangle and no rankings to protect during a migration, just a clean build from the ground up.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">Do you offer lock-in contracts?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a">No. We believe in earning your partnership every single month based on clear data, transparent communication, and measurable growth in your leads and revenue. If you're not happy, simply cancel with 30 days' written notice.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Why do you focus so heavily on website speed and mobile optimisation?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">The vast majority of local trade and service searches happen on smartphones, often by someone who wants an issue fixed fast. If your website takes more than a couple of seconds to load, or looks clunky on a mobile screen, prospects will tap out and call your competitor. We engineer every site to load instantly and function flawlessly on mobile.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">Can I bundle SEO with Google Ads?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a">Yes — in fact, that's one of our core strengths. Combining local SEO with targeted local Google Ads creates a dominant search footprint, capturing searchers who click on ads and those who click on organic Maps results.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Do you build landing pages for Google Ads or Meta Ads campaigns?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">Yes. Sending paid traffic to your homepage is usually a mistake, since homepages have too many distractions. We build focused, single-purpose landing pages matched to exactly what someone searched for or clicked on, which is one of the fastest ways to lower your cost per lead.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">Is local hosting important for Wollongong SEO?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a">Absolutely. Speed is a primary Google ranking factor. Our hosting infrastructure hosts your site locally in Australia, delivering lightning-fast load times for local searchers, which significantly boosts your organic rankings.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">How many pages does my Wollongong business actually need?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">It depends entirely on what you offer and how you're found, but most Wollongong trade and service businesses land somewhere between 5 and 10 pages — home, about, individual service pages, a results or gallery page, and contact. More pages isn't automatically better; every extra page needs to earn its place.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">Do I really need blog articles for my local business?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a">Yes, but only if they're strategic. We look at local search volume and find out exactly what questions your customers in Wollongong are asking — such as "How much does a house extension cost in the Illawarra?" or "What are the council approval steps for a renovation in Shellharbour?" Answering these specific questions captures high-value traffic your competitors are completely ignoring.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Do you help with hosting and website maintenance?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">Yes, completely. Secure, lightning-fast Australian hosting is built directly into our active web development plans so you never have to worry about surprise tech bills. Through thriiv Care &amp; Maintenance, we also handle ongoing content changes, new photos, and security patches so your site always stays sharp and up to date.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">What do I need to provide to get started?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a">We keep onboarding simple. Once we agree on a strategy, we'll just need temporary access to your website backend, Google Analytics, and Google Search Console. If you don't have analytics set up yet, our team will handle the full configuration for you.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Do you force me to move my website hosting to you?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">Not at all. If you already have a reliable, fast hosting provider that you're happy with, we can build or optimise your website right where it is. We offer secure, high-speed hosting as a convenience, but the choice of where your digital assets live is entirely up to you.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">How do you measure success and report on progress?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a">We focus on metrics that impact your bottom line — organic traffic growth, keyword rankings (both traditional and AI search citations), phone calls, and lead form submissions. You'll receive clear monthly reports and direct communication, so you always know what we're working on and how your investment is performing.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Do you build websites for industries outside of trades?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">Yes. Trades and home services make up a large part of who we work with, but we also build for professional services like accountants and solicitors, retail and hospitality businesses, and health and allied health practices. The principles — fast, trustworthy, built to convert — apply regardless of industry.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">How much do SEO and AEO services cost?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a">Our packages are customised based on your industry's competitiveness, your geographic target area, and your growth goals. We offer flexible monthly retainers designed specifically for local service businesses and growing brands — with no hidden fees or long lock-in contracts.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Do you only work with businesses in Wollongong?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">Wollongong and the surrounding Illawarra is our core focus and where most of our clients are based, but we do work with businesses further afield where it makes sense. If you're outside the immediate area, get in touch and we'll be upfront about whether we're the right fit.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">Can you guarantee a #1 ranking on Google?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a">No agency can ethically guarantee a #1 spot because Google constantly updates its algorithms and no one owns the search engine. What we do guarantee is a data-driven, white-hat SEO strategy built on best practices that consistently drives higher search visibility, increased traffic, and genuine local leads to your business.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">What if I've been burnt by a web design agency before?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">More than a few of our clients have. You own your website and your domain from day one, full stop — nothing is held hostage, and if you ever decide to leave, you take everything with you. We'd rather earn your business every month than trap you into staying.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">How do you optimize my website for AI search engines like ChatGPT and Gemini?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a">We structure your website's content so AI language models can easily read, understand, and quote your business. This involves implementing advanced schema markup (structured data), organising content in direct Q&amp;A formats, building conversational keyword strategies, and ensuring your business entity is verified across key authoritative web directories.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Can you help if I'm not sure what I actually need?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">Yes — this is genuinely the most common starting point. Most business owners know something isn't working but aren't sure whether it's the website, the lack of visibility, or something else entirely. A quick, free website health check is usually the fastest way to find out.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">Will AEO help my business appear in Google's AI Overviews?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a">Yes. Google's AI Overviews pull directly from sites that provide clear, authoritative, and structured answers to complex queries. By optimising your site for Answer Engine Optimisation (AEO), we increase the likelihood that Google's AI selects your business as a primary source in its generated search summaries.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Can you redesign my existing website without losing my Google rankings?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">Yes, and it's one of the most important parts of any redesign. Before we touch anything, we audit what's currently ranking and where your traffic is coming from, then carefully map redirects from your old pages to the new ones during launch. Skipping this step is the most common way businesses lose their Google rankings overnight during a redesign — we don't let that happen.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">Do you help with Google Business Profile and Google Maps rankings?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a">Absolutely. For local Wollongong businesses, local map rankings are essential. We fully optimise your Google Business Profile, manage local citations, build regional backlinks, and optimise your location pages to ensure you rank high in Google's Local 3-Pack.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Do I need to already have branding, logo, or content ready before we start?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">Not necessarily. If you've already got branding and content, great — we'll work with what you have. If you don't, we can guide you through what's needed, help with copy, and source photography so you're not stuck trying to write your own website from scratch.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">Do you target customers outside Wollongong, like Shellharbour or Sydney?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a">Yes. Whether you want to capture leads across the Illawarra, the South Coast, or expand into Greater Sydney and nationwide, we craft tailored multi-location SEO and AEO strategies to reach your target geographic regions.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Will my new website actually rank on Google, or is that a separate service?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">Your website is built to rank — clean structure, fast load times, local SEO signals from day one — but "built to rank" and "actively climbing the rankings every month" are two different things. The website gives you the foundation; ongoing local SEO is what pushes you from page two to the map pack over time. Plenty of clients start with just the website and add SEO later.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">What happens after my website goes live — is that the end of the relationship?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
-        <div class="faq-a">Not at all — we treat launch as the start, not the finish. Every site we build comes with a care plan option so it stays fast, secure, and up to date, and we're on hand for content changes whenever you need something updated. Plenty of clients also come back later for SEO, ads, or lead automation once the site's live and doing its job.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">Can you work with my existing website, or do I need a new one?<svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+        <div class="faq-a">In most cases, we work directly with your existing website (WordPress, Shopify, Webflow, Squarespace, etc.). If technical issues or slow speeds are holding your rankings back, we will advise you on the necessary on-site optimisations first to make sure you get results.</div>
       </div>
     </div>
     <p style="margin-top:32px;font-size:15px;color:var(--text-mid);">Still have questions? <a href="#" onclick="openQuestion(); return false;" style="color:var(--teal);font-weight:700;text-decoration:none;">Ask us anything →</a></p>
@@ -1080,7 +1366,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       </div>
 
       <div class="footer-links-col">
-        <div class="footer-col-title" style="margin-bottom:3px;">Explore</div>
+        <div class="footer-col-title">Explore</div>
         <div class="footer-quicklinks">
           <a href="/#services">What We Do</a>
           <a href="/results/">Results</a>
@@ -1090,11 +1376,11 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       </div>
 
       <div class="footer-links-col">
-        <div class="footer-col-title" style="margin-bottom:3px;">Our Services</div>
+        <div class="footer-col-title">Our Services</div>
         <div class="footer-quicklinks">
           <a href="/wollongong-web-design/">thriiv Website Design &amp; Development</a>
           <a href="/wollongong-seo/">thriiv SEO + AEO</a>
-          <a href="/#service-ads">thriiv Google Ads / Meta Ads</a>
+          <a href="/#service-ads">thriiv Ads</a>
           <a href="/#service-maintenance">thriiv Care &amp; Maintenance</a>
           <a href="/#service-lead-automation">thriiv Lead Automation</a>
           <a href="/#service-reviews">thriiv Reviews</a>
@@ -1160,12 +1446,11 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
         <div class="fg" id="af-problem-wrap">
           <label>Biggest online problem right now? <span style="font-weight:400;color:var(--text-light)">(optional — select all that apply)</span></label>
           <div class="checkbox-group">
+            <label class="checkbox-pill"><input type="checkbox" name="af-problem" value="I'm not ranking on Google locally" /> I'm not ranking on Google locally</label>
+            <label class="checkbox-pill"><input type="checkbox" name="af-problem" value="I don't show up in AI search / ChatGPT" /> I don't show up in AI search / ChatGPT</label>
+            <label class="checkbox-pill"><input type="checkbox" name="af-problem" value="My site gets visitors but no enquiries" /> My site gets visitors but no enquiries</label>
             <label class="checkbox-pill"><input type="checkbox" name="af-problem" value="I'm not getting enough leads online" /> I'm not getting enough leads online</label>
             <label class="checkbox-pill"><input type="checkbox" name="af-problem" value="My website looks outdated or unprofessional" /> My website looks outdated or unprofessional</label>
-            <label class="checkbox-pill"><input type="checkbox" name="af-problem" value="I'm not ranking on Google locally" /> I'm not ranking on Google locally</label>
-            <label class="checkbox-pill"><input type="checkbox" name="af-problem" value="My site gets visitors but no enquiries" /> My site gets visitors but no enquiries</label>
-            <label class="checkbox-pill"><input type="checkbox" name="af-problem" value="I don't have a website" /> I don't have a website</label>
-            <label class="checkbox-pill"><input type="checkbox" name="af-problem" value="I need help with updates & maintenance" /> I need help with updates &amp; maintenance</label>
             <label class="checkbox-pill"><input type="checkbox" name="af-problem" value="I'm not sure — I just know something's not working" /> I'm not sure — I just know something's not working</label>
           </div>
         </div>
@@ -1315,7 +1600,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       websiteUrl: url,
       problem: problems,
       packageInterest: packageInterest,
-      source: 'lp-web-wollongong-webdesign'
+      source: 'lp-web-wollongong-seo'
     };
 
     // Fire both — no waiting, redirect happens on timer
@@ -1334,7 +1619,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
     }).catch(()=>{});
 
     if (typeof fbq !== 'undefined') {
-      fbq('track', 'Lead', { content_name: 'Free Website Audit', content_category: 'lp-web-wollongong-webdesign' });
+      fbq('track', 'Lead', { content_name: 'Free Search & Answer Audit', content_category: 'lp-web-wollongong-seo' });
     }
 
     // Redirect after 1.5s regardless of webhook response
@@ -1342,7 +1627,6 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       window.location.href = '/thank-you-audit/';
     }, 1500);
   }
-
 
   function submitHealthCheck() {
     // Honeypot check — bail silently if a bot has filled the hidden field
@@ -1365,7 +1649,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       email: email,
       phone: phone,
       websiteUrl: url,
-      source: 'lp-web-wollongong-webdesign-healthcheck'
+      source: 'lp-web-wollongong-seo-healthcheck'
     };
 
     // Fire both — no waiting, redirect happens on timer
@@ -1384,7 +1668,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
     }).catch(()=>{});
 
     if (typeof fbq !== 'undefined') {
-      fbq('track', 'Lead', { content_name: 'Free Health Check', content_category: 'lp-web-wollongong-webdesign' });
+      fbq('track', 'Lead', { content_name: 'Free Health Check', content_category: 'lp-web-wollongong-seo' });
     }
 
     // Redirect after 1.5s regardless of webhook response
@@ -1392,7 +1676,6 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       window.location.href = '/thank-you-healthcheck/';
     }, 1500);
   }
-
 
   function submitQuestion() {
     // Honeypot check — bail silently if a bot has filled the hidden field
@@ -1413,7 +1696,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       email: email,
       phone: document.getElementById('qf-phone').value.trim(),
       message: msg,
-      source: 'lp-web-wollongong-webdesign'
+      source: 'lp-web-wollongong-seo'
     };
 
     fetch('https://formspree.io/f/mykqadbl', {
@@ -1431,14 +1714,13 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
     }).catch(()=>{});
 
     if (typeof fbq !== 'undefined') {
-      fbq('track', 'Lead', { content_name: 'Got a Question', content_category: 'lp-web-wollongong-webdesign' });
+      fbq('track', 'Lead', { content_name: 'Got a Question', content_category: 'lp-web-wollongong-seo' });
     }
 
     setTimeout(() => {
       window.location.href = '/thank-you-question/';
     }, 1500);
   }
-
 
   let calendlyLoaded = false;
   function openCalendly() {
