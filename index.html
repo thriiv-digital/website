@@ -82,8 +82,8 @@
   .badge-text { display:flex; flex-direction:column; gap:2px; }
   .badge-stars { color:#f6c90e; font-size:13px; letter-spacing:2px; line-height:1; }
   .badge-stat { font-size:13px; font-weight:500; color:rgba(255,255,255,0.85); }
-  .hero h1 { font-size:clamp(32px,4.2vw,50px); font-weight:800; color:var(--black); margin-bottom:20px; letter-spacing:-1.5px; }
-  .hero h1 em { font-style:normal; color:var(--teal); }
+  .hero .hero-title { font-size:clamp(32px,4.2vw,50px); font-weight:800; color:var(--black); margin-bottom:20px; letter-spacing:-1.5px; font-family:'Sora',sans-serif; line-height:1.15; }
+  .hero .hero-title em { font-style:normal; color:var(--teal); }
   .hero-sub { font-size:clamp(16px,2vw,18px); color:var(--text-mid); max-width:620px; margin:0 0 36px; line-height:1.65; font-weight:400; }
   @media (max-width:960px) { .hero-sub { margin:0 auto 36px; } }
   .hero-actions { display:flex; flex-wrap:wrap; gap:12px; justify-content:flex-start; align-items:center; margin-bottom:48px; }
@@ -117,7 +117,7 @@
   .hero-blur .hero-badge { background:rgba(255,255,255,0.08); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(255,255,255,0.14); }
   .hero-blur .badge-avatar { border-color:rgba(255,255,255,0.25); }
   .hero-blur .badge-stat { color:rgba(255,255,255,0.75); }
-  .hero-blur h1 { color:var(--white); }
+  .hero-blur .hero-title { color:var(--white); }
   .hero-blur .hero-sub { color:rgba(255,255,255,0.72); }
   .hero-blur .btn-secondary { border-color:rgba(255,255,255,0.28); color:var(--white); }
   .hero-blur .btn-secondary:hover { border-color:var(--teal); color:var(--teal); }
@@ -136,8 +136,8 @@
   .logo-grid-row { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:40px; }
   @media (max-width:640px) { .logo-grid { gap:40px; } .logo-grid-row { justify-content:center; gap:40px; } }
   .logo-item { display:flex; align-items:center; flex-shrink:0; }
-  .logo-img { height:72px; width:auto; max-width:192px; object-fit:contain; opacity:0.85; filter:none; transition:opacity 0.2s; }
-  .logo-img:hover { opacity:1; }
+  .logo-img { height:72px; width:auto; max-width:192px; object-fit:contain; filter:none; transition:transform 0.2s; }
+  .logo-img:hover { transform:scale(1.07); }
   .logo-placeholder { display:flex; align-items:center; justify-content:center; height:52px; padding:0 22px; font-family:'Sora',sans-serif; font-weight:700; font-size:16px; color:var(--black); white-space:nowrap; letter-spacing:-0.3px; opacity:0.85; border:1.5px dashed var(--mid-grey); border-radius:10px; transition:opacity 0.2s,border-color 0.2s; }
   .logo-chip-blue { display:flex; align-items:center; justify-content:center; height:52px; padding:0 22px; background:#3E69B2; border-radius:10px; opacity:0.85; transition:opacity 0.2s; }
   .logo-chip-blue:hover { opacity:1; }
@@ -673,6 +673,15 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
 <section class="hero hero-blur">
   <div class="hero-grid">
     <div class="hero-content">
+      <h1 class="section-label">Wollongong Web Design</h1>
+      <p class="hero-title">Where local Wollongong businesses go to <em>thriiv.</em></p>
+      <p class="hero-sub">We turn your website into a lead-generating machine—driving consistent enquiries, managing your ad spend, and scaling your local SEO, all while keeping your site sharp and high-converting. Consider us your complete growth team right here in Wollongong.</p>
+
+      <div class="hero-actions">
+        <a href="#" class="btn-primary" onclick="openAudit(); return false;">Let's Thriiv</a>
+        <a href="#" class="btn-secondary" onclick="openCalendly(); return false;">Book a 20-Min Strategy Call</a>
+      </div>
+
       <div class="hero-badge">
         <div class="badge-avatars">
           <img class="badge-avatar" src="https://i.pravatar.cc/100?img=12" alt="Jake Thompson" loading="lazy" />
@@ -684,14 +693,6 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
           <div class="badge-stars">★★★★★</div>
           <div class="badge-stat">5.0 star ratings from local businesses</div>
         </div>
-      </div>
-
-      <h1>Where local Wollongong businesses go to <em>thriiv.</em></h1>
-      <p class="hero-sub">We turn your website into a lead-generating machine—driving consistent enquiries, managing your ad spend, and scaling your local SEO, all while keeping your site sharp and high-converting. Consider us your complete growth team right here in Wollongong.</p>
-
-      <div class="hero-actions">
-        <a href="#" class="btn-primary" onclick="openAudit(); return false;">Let's Thriiv</a>
-        <a href="#" class="btn-secondary" onclick="openCalendly(); return false;">Book a 20-Min Strategy Call</a>
       </div>
     </div>
 
@@ -735,8 +736,8 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
     <div class="logo-grid-row">
       <div class="logo-item"><img src="images/logo-shellharbour-air-hq.png" alt="Shellharbour Airconditioning" class="logo-img" style="height:78px;" loading="lazy" /></div>
       <div class="logo-item"><img src="images/logo-accountright-hq.png" alt="AccountRight" class="logo-img" style="height:48px;" loading="lazy" /></div>
-      <div class="logo-item"><img src="images/logo-kiama.png" alt="Kiama Cleaning" class="logo-img" loading="lazy" /></div>
-      <div class="logo-item"><img src="images/logo-resolved-it.png" alt="Resolved IT" class="logo-img" loading="lazy" /></div>
+      <div class="logo-item" style="position:relative;top:-5px;"><img src="images/logo-kiama.png" alt="Kiama Cleaning" class="logo-img" loading="lazy" /></div>
+      <div class="logo-item"><img src="images/logo-resolved-it.png" alt="Resolved IT" class="logo-img" style="height:67px;" loading="lazy" /></div>
       <div class="logo-item"><img src="images/logo-oateslaw.png" alt="Oates Law" class="logo-img" loading="lazy" /></div>
     </div>
     <div class="logo-grid-row">
@@ -744,7 +745,7 @@ src="https://www.facebook.com/tr?id=1474182591018424&ev=PageView&noscript=1"/></
       <div class="logo-item" style="margin-right:-36px; position:relative; left:24px;"><img src="images/logo-sydneydrafting.webp" alt="Sydney Drafting" class="logo-img" loading="lazy" /></div>
       <div class="logo-item"><img src="images/logo-highlands.png" alt="Highlands Cleaning" class="logo-img" loading="lazy" /></div>
       <div class="logo-item"><img src="images/GCDS-logo-crop.png" alt="Growth Concept Development Services" class="logo-img" style="height:82px;" loading="lazy" /></div>
-      <div class="logo-item"><img src="images/logo-illawarra-plumbing.png" alt="Illawarra Plumbing Co" class="logo-img" style="height:53px;" loading="lazy" /></div>
+      <div class="logo-item"><img src="images/logo-illawarra-plumbing.png" alt="Illawarra Plumbing Co" class="logo-img" style="height:48px;" loading="lazy" /></div>
     </div>
   </div>
 </div>
