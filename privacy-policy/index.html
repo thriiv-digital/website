@@ -292,6 +292,39 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
     .nav-mega-cta { display:none; }
   }
 </style>
+<style>
+  /* V2 header/footer refresh — matches the new homepage */
+  :root { --v2-navy:#0a1f24; --v2-teal:#21D4A7; --v2-teal-mid:#17b98e; }
+  .v2-nav { max-width:1600px; height:auto; padding:14px 20px; border-radius:28px; border:none; box-shadow:0 20px 50px rgba(10,31,36,0.18); }
+  .v2-nav .nav-health-btn { border-radius:100px; padding:10px 20px; border-color:var(--v2-navy); color:var(--v2-navy); }
+  .v2-nav .nav-health-btn:hover { border-color:var(--v2-teal-mid); color:var(--v2-teal-mid); }
+  .v2-nav .nav-cta { border-radius:100px; padding:12px 24px; background:var(--v2-teal); color:#fff; }
+  .v2-nav .nav-cta:hover { filter:brightness(0.95); }
+  @media (min-width: 961px) {
+    .nav-item-mega { position: relative; }
+    .v2-mega-panel { left: 0; transform: none; padding-top: 30px; }
+    .v2-mega-panel-inner { grid-template-columns: repeat(4, 230px); gap: 0; padding: 14px; border-top: 1px solid var(--mid-grey); border-bottom: 3px solid var(--teal); }
+    .nav-mega-col { padding: 0 8px; }
+    .v2-mega-link, .v2-mega-sub {
+      display: block; text-decoration: none; border-left: none; margin: 0; border-radius: 8px;
+      padding: 5px 6px; transition: background 0.15s, color 0.15s;
+    }
+    .v2-mega-link:hover, .v2-mega-sub:hover { background: var(--teal-mist); }
+    .v2-mega-link { font-size: 16px; font-weight: 700; color: var(--black); white-space: normal; line-height: 1.3; margin: 0 0 4px; padding: 5px 6px 8px; }
+    .v2-mega-link:hover { color: var(--teal); }
+    .v2-mega-sub {
+      font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px;
+      color: var(--teal); display: flex; align-items: center; gap: 6px;
+    }
+    .v2-mega-sub::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--teal); flex-shrink: 0; }
+    .v2-mega-sub:hover { color: var(--v2-navy); }
+    .v2-mega-sub:hover::before { background: var(--v2-navy); }
+  }
+  footer { background: #081c21; }
+  .footer-inner { max-width: 1600px; }
+  .footer-cta-box .nav-cta { border-radius: 100px; padding: 12px 24px; background: var(--v2-teal); }
+  .footer-cta-box .nav-cta:hover { filter: brightness(0.95); transform: translateY(-1px); }
+</style>
 
 
   <link rel="icon" type="image/png" href="/images/favicon.png">
@@ -300,44 +333,45 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
 <body>
 
 <!-- NAV -->
-<nav>
+<nav class="v2-nav">
   <a href="https://thriivdigital.com.au/" class="nav-logo"><img src="/images/logo-thriiv.png" alt="thriiv.digital"></a>
   <div class="nav-links" id="navLinks">
     <div class="nav-item-mega">
-      <a href="/#services" class="nav-link" onclick="closeNav()">What We Do</a>
-      <div class="nav-mega-panel">
-        <div class="nav-mega-panel-inner">
+      <a href="/#services" class="nav-link" onclick="closeNav()">How We Can Help</a>
+      <div class="nav-mega-panel v2-mega-panel">
+        <div class="nav-mega-panel-inner v2-mega-panel-inner">
           <div class="nav-mega-col">
-            <div class="nav-mega-col-title">Scale your customer base</div>
-            <div class="nav-mega-col-sub">Get in front of ready-to-buy customers</div>
-            <a href="/wollongong-ads/" class="nav-mega-link">thriiv Ads (Google Ads + Meta Ads)</a>
-            <a href="/wollongong-web-design/" class="nav-mega-link">thriiv Website Design &amp; Development</a>
+            <a href="/wollongong-ads/" class="nav-mega-link v2-mega-link">I need more leads &amp; enquiries</a>
+            <a href="/wollongong-ads/" class="v2-mega-sub">Google &amp; Meta Ads</a>
+            <a href="/wollongong-web-design/#services" class="v2-mega-sub">Landing Pages</a>
           </div>
           <div class="nav-mega-col">
-            <div class="nav-mega-col-title">Dominate local search</div>
-            <div class="nav-mega-col-sub">Rank on Google and get found in AI search</div>
-            <a href="#" class="nav-mega-link" onclick="openAudit('thriiv SEO + AEO'); return false;">thriiv SEO + AEO</a>
-            <a href="#" class="nav-mega-link" onclick="openAudit('thriiv Reviews'); return false;">thriiv Reviews</a>
+            <a href="/wollongong-seo/" class="nav-mega-link v2-mega-link">I need to rank #1 on Google</a>
+            <a href="/wollongong-seo/" class="v2-mega-sub">Search Engine Optimisation</a>
+            <a href="/wollongong-seo/" class="v2-mega-sub">Local SEO</a>
+            <a href="/wollongong-seo/" class="v2-mega-sub">Google Map Pack Ranking</a>
           </div>
           <div class="nav-mega-col">
-            <div class="nav-mega-col-title">Stop missing opportunities</div>
-            <div class="nav-mega-col-sub">No missed leads, no website downtime</div>
-            <a href="#" class="nav-mega-link" onclick="openAudit('thriiv Lead Automation'); return false;">thriiv Lead Automation</a>
-            <a href="#" class="nav-mega-link" onclick="openAudit('thriiv Care &amp; Maintenance'); return false;">thriiv Care &amp; Maintenance</a>
+            <a href="#" class="nav-mega-link v2-mega-link" onclick="closeNav();openAudit('thriiv Lead Automation');return false;">I need help with leads &amp; reviews</a>
+            <a href="#" class="v2-mega-sub" onclick="closeNav();openAudit('thriiv Lead Automation');return false;">AI &amp; Automations</a>
+            <a href="#" class="v2-mega-sub" onclick="closeNav();openAudit('thriiv Reviews');return false;">Review Automations</a>
           </div>
-          <a href="#" class="nav-mega-cta" onclick="openAudit(); return false;">Not sure what you need? <strong>Talk to our team &rarr;</strong></a>
+          <div class="nav-mega-col">
+            <a href="/wollongong-web-design/" class="nav-mega-link v2-mega-link">I need my website to work harder</a>
+            <a href="/wollongong-web-design/" class="v2-mega-sub">Web Design</a>
+            <a href="#" class="v2-mega-sub" onclick="closeNav();openAudit('thriiv Care &amp; Maintenance');return false;">Support &amp; Maintenance</a>
+          </div>
         </div>
       </div>
     </div>
-    <a href="/results/" class="nav-link" onclick="closeNav()">Results</a>
-    <a href="/#who-we-are" class="nav-link" onclick="closeNav()">Who We Are</a>
-    <a href="/#faq" class="nav-link" onclick="closeNav()">FAQs</a>
+    <a href="/#case-studies" class="nav-link" onclick="closeNav()">Real Proof</a>
+    <a href="/#who-we-are" class="nav-link" onclick="closeNav()">Why thriiv?</a>
     <a href="/contact/" class="nav-link" onclick="closeNav()">Contact</a>
   </div>
   <div class="nav-right">
     <a href="tel:+61240034446" class="nav-phone-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(02) 4003 4446</a>
-    <a href="#" class="nav-health-btn" onclick="openHealthCheck(); return false;">Free Growth Health Check</a>
-    <a href="#" class="nav-cta" onclick="openAudit(); return false;">Let's Thriiv</a>
+    <a href="#" class="nav-health-btn" onclick="openHealthCheck(); return false;">See Where You're Losing Leads</a>
+    <a href="#" class="nav-cta" onclick="openCalendly(); return false;">Book a 15 Min Quick Chat</a>
     <button class="nav-burger" id="navBurger" onclick="toggleNav()" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -504,12 +538,12 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
       <div class="footer-links-col">
         <div class="footer-col-title" style="margin-bottom:3px;">Our Services</div>
         <div class="footer-quicklinks">
-          <a href="/wollongong-web-design/">thriiv Website Design &amp; Development</a>
-          <a href="/#service-seo">thriiv SEO + AEO</a>
-          <a href="/wollongong-ads/">thriiv Ads (Google Ads + Meta Ads)</a>
-          <a href="/#service-maintenance">thriiv Care &amp; Maintenance</a>
-          <a href="/#service-lead-automation">thriiv Lead Automation</a>
-          <a href="/#service-reviews">thriiv Reviews</a>
+          <a href="/wollongong-web-design/">Website Design &amp; Development</a>
+          <a href="/#service-seo">SEO + AEO</a>
+          <a href="/wollongong-ads/">Ads (Google Ads + Meta Ads)</a>
+          <a href="/#service-maintenance">Care &amp; Maintenance</a>
+          <a href="/#service-lead-automation">Lead Automation</a>
+          <a href="/#service-reviews">Reviews</a>
         </div>
       </div>
 
@@ -533,7 +567,7 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
       <div class="footer-cta-box">
         <div class="footer-col-title">Get started</div>
         <p>Share your details and our local team will get back to you within the day. We look forward to helping you thriiv.</p>
-        <a href="#" class="nav-cta" onclick="openAudit(); return false;">Let's Thriiv</a>
+        <a href="#" class="nav-cta" onclick="openCalendly(); return false;">Book a 15 Min Quick Chat</a>
       </div>
     </div>
 

@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /index-old.html
 
 Sitemap: https://thriivdigital.com.au/sitemap.xml
