@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -14,8 +14,19 @@
     'domains': ['go.thriiv.digital', 'calendly.com']
   });
 </script>
-<title>Question Received | thriiv.digital</title>
-<link rel="canonical" href="https://thriivdigital.com.au/thank-you-question/">
+<title>Contact Us | thriiv Digital &mdash; Wollongong Web Design Agency</title>
+<link rel="canonical" href="https://thriivdigital.com.au/contact/">
+<meta name="description" content="Get in touch with thriiv Digital. Call, email, or send your details and our local Wollongong team will get back to you within the day.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="thriiv Digital">
+<meta property="og:title" content="Contact Us | thriiv Digital">
+<meta property="og:description" content="Get in touch with thriiv Digital. Call, email, or send your details and our local Wollongong team will get back to you within the day.">
+<meta property="og:url" content="https://thriivdigital.com.au/contact/">
+<meta property="og:image" content="https://thriivdigital.com.au/images/logo-thriiv.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact Us | thriiv Digital">
+<meta name="twitter:description" content="Get in touch with thriiv Digital. Call, email, or send your details and our local Wollongong team will get back to you within the day.">
+<meta name="twitter:image" content="https://thriivdigital.com.au/images/logo-thriiv.png">
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -43,6 +54,33 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
+<link rel="icon" type="image/png" href="/images/favicon.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "@id": "https://thriivdigital.com.au/contact/#webpage",
+  "url": "https://thriivdigital.com.au/contact/",
+  "name": "Contact Us | thriiv Digital",
+  "description": "Get in touch with thriiv Digital. Call, email, or send your details and our local Wollongong team will get back to you within the day.",
+  "isPartOf": { "@id": "https://thriivdigital.com.au/#organization" },
+  "about": { "@id": "https://thriivdigital.com.au/#organization" },
+  "inLanguage": "en-AU"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thriivdigital.com.au/" },
+    { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://thriivdigital.com.au/contact/" }
+  ]
+}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -156,28 +194,48 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
     .nav-mega-cta { display:none; }
   }
 
-  /* THANK YOU HERO */
-  .ty-hero { padding:168px 24px 110px; background:linear-gradient(180deg, #ffffff 0%, var(--teal-mist) 100%); text-align:center; position:relative; overflow:hidden; }
-  .ty-hero::before { content:''; position:absolute; top:-180px; left:-160px; width:520px; height:520px; border-radius:50%; background:radial-gradient(circle, rgba(0,183,152,0.18) 0%, transparent 70%); pointer-events:none; }
-  .ty-hero::after { content:''; position:absolute; bottom:-220px; right:-180px; width:600px; height:600px; border-radius:50%; background:radial-gradient(circle, rgba(0,183,152,0.14) 0%, transparent 70%); pointer-events:none; }
-  .ty-icon { position:relative; z-index:1; display:flex; justify-content:center; margin-bottom:24px; }
-  .ty-icon-circle { width:88px; height:88px; border-radius:50%; background:var(--white); box-shadow:var(--shadow-md); display:flex; align-items:center; justify-content:center; }
-  .ty-hero h1 { position:relative; z-index:1; font-size:clamp(30px,4.2vw,46px); font-weight:800; color:var(--black); margin-bottom:18px; letter-spacing:-1px; }
-  .ty-hero p { position:relative; z-index:1; font-size:clamp(16px,2vw,18px); color:var(--text-mid); max-width:600px; margin:0 auto; line-height:1.7; }
-  .ty-actions { position:relative; z-index:1; display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:40px; }
-  @media (max-width:480px) { .ty-actions { flex-direction:column; align-items:stretch; } .btn-primary, .btn-secondary { width:100%; } }
+  /* HERO */
+  .hero { padding:160px 24px 72px; background:linear-gradient(180deg, #ffffff 0%, var(--teal-mist) 100%); text-align:center; }
+  .hero-inner { max-width:760px; margin:0 auto; }
+  .section-label { font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--teal); margin-bottom:12px; display:inline-block; }
+  .section-label::before { content:''; display:inline-block; width:7px; height:7px; background:var(--teal); border-radius:2px; margin-right:8px; vertical-align:middle; transform:translateY(-1px); }
+  .hero h1 { font-size:clamp(30px,4vw,46px); font-weight:800; color:var(--black); margin-bottom:16px; letter-spacing:-1.5px; }
+  .hero-sub { font-size:17px; color:var(--text-mid); max-width:620px; margin:0 auto; line-height:1.7; font-weight:400; }
 
-  /* MODAL */
-  .modal-overlay { position:fixed; inset:0; background:rgba(19,34,54,0.7); backdrop-filter:blur(6px); z-index:999; display:flex; align-items:center; justify-content:center; padding:24px; opacity:0; pointer-events:none; transition:opacity 0.25s; }
-  .modal-overlay.open { opacity:1; pointer-events:all; }
-  .modal { background:var(--white); border-radius:var(--radius-lg); padding:40px; width:100%; max-width:580px; position:relative; transform:translateY(20px); transition:transform 0.25s; box-shadow:var(--shadow-lg); max-height:90vh; overflow-y:auto; }
-  .modal-overlay.open .modal { transform:translateY(0); }
-  .modal-close { position:absolute; top:16px; right:16px; width:32px; height:32px; background:var(--teal-mist); border:none; border-radius:8px; cursor:pointer; display:flex; align-items:center; justify-content:center; font-size:18px; color:var(--text-mid); transition:background 0.2s; }
-  .modal-close:hover { background:var(--mid-grey); }
-  .modal h3 { font-size:22px; font-weight:800; color:var(--black); margin-bottom:6px; letter-spacing:-0.5px; }
-  .modal > p { font-size:14px; color:var(--text-light); margin-bottom:24px; }
+  .section { padding:0 24px 96px; }
+  .container { max-width:1160px; margin:0 auto; }
+  @media (max-width:640px) { .section { padding:0 20px 64px; } .hero { padding:140px 20px 56px; } }
 
-  /* CHECKBOX GROUP (multi-select) */
+  /* CONTACT GRID */
+  .contact-grid { display:grid; grid-template-columns:1.15fr 0.85fr; gap:28px; align-items:start; }
+  @media (max-width:900px) { .contact-grid { grid-template-columns:1fr; } }
+  .contact-card { background:var(--white); border:1px solid var(--mid-grey); border-radius:var(--radius-lg); padding:36px; box-shadow:var(--shadow-sm); }
+  .contact-card h2 { font-size:22px; font-weight:800; color:var(--black); margin-bottom:6px; letter-spacing:-0.5px; }
+  .contact-card > p { font-size:14px; color:var(--text-light); margin-bottom:8px; }
+
+  .info-stack { display:flex; flex-direction:column; gap:16px; }
+  .info-card { background:var(--black); border-radius:var(--radius-lg); padding:28px; color:var(--white); }
+  .info-card.light { background:var(--white); border:1px solid var(--mid-grey); box-shadow:var(--shadow-sm); }
+  .info-row { display:flex; align-items:flex-start; gap:14px; }
+  .info-row + .info-row { margin-top:20px; }
+  .info-icon-circle { width:40px; height:40px; border-radius:50%; background:rgba(0,183,152,0.15); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  .info-icon-circle svg { width:18px; height:18px; stroke:var(--teal); }
+  .info-card.light .info-icon-circle { background:var(--teal-mist); }
+  .info-title { font-family:'Sora',sans-serif; font-weight:700; font-size:14px; margin-bottom:4px; }
+  .info-card:not(.light) .info-title { color:var(--white); }
+  .info-card.light .info-title { color:var(--black); }
+  .info-value { font-size:15px; text-decoration:none; display:block; }
+  .info-card:not(.light) .info-value { color:rgba(255,255,255,0.85); }
+  .info-card.light .info-value { color:var(--text-mid); }
+  .info-value:hover { color:var(--teal); }
+  .info-note { font-size:12.5px; margin-top:2px; }
+  .info-card:not(.light) .info-note { color:rgba(255,255,255,0.45); }
+  .info-card.light .info-note { color:var(--text-light); }
+  .service-area-list { font-size:14px; color:var(--text-mid); line-height:1.8; }
+  .map-link { display:inline-flex; align-items:center; gap:6px; margin-top:14px; font-family:'Sora',sans-serif; font-weight:700; font-size:14px; color:var(--teal); text-decoration:none; }
+  .map-link:hover { filter:brightness(0.9); }
+
+  /* CHECKBOX GROUP */
   .checkbox-group { display:flex; flex-direction:column; gap:10px; margin-top:4px; }
   .checkbox-pill { display:flex; align-items:center; gap:10px; padding:10px 14px; border:1.5px solid var(--mid-grey); border-radius:8px; font-size:14px; color:var(--text-dark); cursor:pointer; transition:border-color 0.2s,background 0.2s; }
   .checkbox-pill:hover { border-color:var(--teal); background:rgba(0,183,152,0.04); }
@@ -218,10 +276,20 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
   /* Honeypot — bot trap, do not remove */
   .hp-field { opacity:0; position:absolute; top:0; left:0; height:0; width:0; z-index:-1; pointer-events:none; }
 
+  /* MODAL */
+  .modal-overlay { position:fixed; inset:0; background:rgba(19,34,54,0.7); backdrop-filter:blur(6px); z-index:999; display:flex; align-items:center; justify-content:center; padding:24px; opacity:0; pointer-events:none; transition:opacity 0.25s; }
+  .modal-overlay.open { opacity:1; pointer-events:all; }
+  .modal { background:var(--white); border-radius:var(--radius-lg); padding:40px; width:100%; max-width:580px; position:relative; transform:translateY(20px); transition:transform 0.25s; box-shadow:var(--shadow-lg); max-height:90vh; overflow-y:auto; }
+  .modal-overlay.open .modal { transform:translateY(0); }
+  .modal-close { position:absolute; top:16px; right:16px; width:32px; height:32px; background:var(--teal-mist); border:none; border-radius:8px; cursor:pointer; display:flex; align-items:center; justify-content:center; font-size:18px; color:var(--text-mid); transition:background 0.2s; }
+  .modal-close:hover { background:var(--mid-grey); }
+  .modal h3 { font-size:22px; font-weight:800; color:var(--black); margin-bottom:6px; letter-spacing:-0.5px; }
+  .modal > p { font-size:14px; color:var(--text-light); margin-bottom:24px; }
+
   /* FOOTER */
   footer { background:var(--black); margin:20px; border-radius:28px; padding:64px 40px 0; overflow:hidden; }
   @media (max-width:640px) { footer { margin:12px; padding:48px 24px 0; } }
-  .footer-inner { max-width:1320px; margin:0 auto; }
+  .footer-inner { max-width:1440px; margin:0 auto; }
   .footer-top { display:flex; flex-wrap:wrap; justify-content:space-between; gap:20px; padding-bottom:56px; border-bottom:1px solid rgba(255,255,255,0.08); }
   .footer-brand-col { flex:1 1 200px; max-width:230px; }
   .footer-links-col { flex:1 1 130px; max-width:160px; display:flex; flex-direction:column; gap:24px; }
@@ -291,10 +359,6 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
   .footer-cta-box .nav-cta { border-radius: 100px; padding: 12px 24px; background: var(--v2-teal); }
   .footer-cta-box .nav-cta:hover { filter: brightness(0.95); transform: translateY(-1px); }
 </style>
-
-
-  <link rel="icon" type="image/png" href="/images/favicon.png">
-  <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
 
@@ -344,14 +408,86 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
   </div>
 </nav>
 
-<!-- THANK YOU HERO -->
-<section class="ty-hero">
-  <div class="ty-icon"><div class="ty-icon-circle"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div></div>
-  <h1>Thanks for the question!</h1>
-  <p>We've received your question and a member of our local team will get back to you with a helpful answer shortly.</p>
-  <div class="ty-actions">
-    <a href="/results/" class="btn-primary">See Our Client Results →</a>
-    <a href="/#faq" class="btn-secondary">Read Our FAQs</a>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="section-label">Get In Touch</div>
+    <h1>Let's talk about growing your business.</h1>
+    <p class="hero-sub">Whether you've got a question, want a quote, or you're ready to get started — we're a small, local Wollongong team and we get back to you fast. No call centres, no scripted replies.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-card">
+        <h2>Send Us a Message</h2>
+        <p>Share your details and our local team will get back to you within the day.</p>
+        <div id="contactFormWrap">
+          <div class="native-form">
+            <div class="fg"><label>First Name *</label><input type="text" id="cf-fname" placeholder="James" /></div>
+            <div class="fg"><label>Business Name *</label><input type="text" id="cf-biz" placeholder="Smith Plumbing" /></div>
+            <div class="fg"><label>Email Address *</label><input type="email" id="cf-email" placeholder="james@smithplumbing.com.au" /></div>
+            <div class="fg"><label>Mobile *</label><input type="tel" id="cf-phone" placeholder="0400 000 000" /></div>
+            <div class="fg"><label>Website URL</label><input type="url" id="cf-url" placeholder="https://yourwebsite.com.au" /></div>
+            <div class="fg">
+              <label>Biggest online problem right now? <span style="font-weight:400;color:var(--text-light)">(optional — select all that apply)</span></label>
+              <div class="checkbox-group">
+                <label class="checkbox-pill"><input type="checkbox" name="cf-problem" value="I'm not getting enough leads online" /> I'm not getting enough leads online</label>
+                <label class="checkbox-pill"><input type="checkbox" name="cf-problem" value="My website looks outdated or unprofessional" /> My website looks outdated or unprofessional</label>
+                <label class="checkbox-pill"><input type="checkbox" name="cf-problem" value="I'm not ranking on Google locally" /> I'm not ranking on Google locally</label>
+                <label class="checkbox-pill"><input type="checkbox" name="cf-problem" value="My site gets visitors but no enquiries" /> My site gets visitors but no enquiries</label>
+                <label class="checkbox-pill"><input type="checkbox" name="cf-problem" value="I don't have a website" /> I don't have a website</label>
+                <label class="checkbox-pill"><input type="checkbox" name="cf-problem" value="I need help with updates & maintenance" /> I need help with updates &amp; maintenance</label>
+                <label class="checkbox-pill"><input type="checkbox" name="cf-problem" value="I'm not sure — I just know something's not working" /> I'm not sure — I just know something's not working</label>
+              </div>
+            </div>
+            <button class="form-submit-btn" onclick="submitContact()">Send Message &rarr;</button>
+            <!-- Honeypot — do not remove -->
+            <div class="hp-field" aria-hidden="true"><label for="cf-hp">Leave this blank</label><input type="text" id="cf-hp" name="cf-hp" autocomplete="off" tabindex="-1"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <div class="info-stack">
+        <div class="info-card">
+          <div class="info-row">
+            <div class="info-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div>
+              <div class="info-title">Call Us</div>
+              <a href="tel:+61240034446" class="info-value">(02) 4003 4446</a>
+              <div class="info-note">Mon&ndash;Fri, business hours AEST</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div>
+              <div class="info-title">Email Us</div>
+              <a href="mailto:hello@thriivdigital.com.au" class="info-value">hello@thriivdigital.com.au</a>
+              <div class="info-note">We read every message personally</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div>
+              <div class="info-title">Visit Us</div>
+              <span class="info-value" style="cursor:default;">Ground Floor, Enterprise 1,<br>Innovation Campus, Squires Way,<br>North Wollongong NSW 2500</span>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Ground%20Floor%2C%20Enterprise%201%2C%20Innovation%20Campus%2C%20Squires%20Way%2C%20North%20Wollongong%20NSW%202500" target="_blank" rel="noopener" class="map-link">Open in Google Maps &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card light">
+          <div class="info-title" style="margin-bottom:10px;">Service Area</div>
+          <p class="service-area-list">We work with businesses right across the Illawarra &mdash; Wollongong, Fairy Meadow, Corrimal, Bulli, Thirroul, Woonona, Port Kembla, Unanderra, Figtree, Shellharbour, Kiama, Dapto, Albion Park, and the Southern Highlands fringe.</p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -384,11 +520,11 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
         <div class="footer-col-title" style="margin-bottom:3px;">Our Services</div>
         <div class="footer-quicklinks">
           <a href="/wollongong-web-design/">Website Design &amp; Development</a>
-          <a href="/#service-seo">SEO + AEO</a>
+          <a href="/wollongong-seo/">SEO + AEO</a>
           <a href="/wollongong-ads/">Ads (Google Ads + Meta Ads)</a>
-          <a href="/#service-maintenance">Care &amp; Maintenance</a>
-          <a href="/#service-lead-automation">Lead Automation</a>
-          <a href="/#service-reviews">Reviews</a>
+          <a href="#" onclick="openAudit('thriiv Care &amp; Maintenance'); return false;">Care &amp; Maintenance</a>
+          <a href="#" onclick="openAudit('thriiv Lead Automation'); return false;">Lead Automation</a>
+          <a href="#" onclick="openAudit('thriiv Reviews'); return false;">Reviews</a>
         </div>
       </div>
 
@@ -417,7 +553,7 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 thriiv.digital · thriiv Digital · <a href="https://www.google.com/maps/search/?api=1&amp;query=Ground%20Floor%2C%20Enterprise%201%2C%20Innovation%20Campus%2C%20Squires%20Way%2C%20North%20Wollongong%20NSW%202500" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.45);text-decoration:none;">Ground Floor, Enterprise 1, Innovation Campus, Squires Way, North Wollongong NSW 2500</a></p>
+      <p>&copy; 2026 thriiv.digital &middot; thriiv Digital &middot; <a href="https://www.google.com/maps/search/?api=1&amp;query=Ground%20Floor%2C%20Enterprise%201%2C%20Innovation%20Campus%2C%20Squires%20Way%2C%20North%20Wollongong%20NSW%202500" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.45);text-decoration:none;">Ground Floor, Enterprise 1, Innovation Campus, Squires Way, North Wollongong NSW 2500</a></p>
       <div class="footer-bottom-links">
         <a href="#" onclick="openQuestion(); return false;">Got a Question?</a>
         <a href="/privacy-policy/">Privacy Policy</a>
@@ -429,7 +565,7 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
 <!-- CALENDLY MODAL -->
 <div class="modal-overlay" id="calendlyModal" onclick="closeCalendlyOutside(event)">
   <div class="modal" style="max-width:700px;padding:0;overflow:hidden;background:var(--white);box-shadow:var(--shadow-lg);">
-    <button class="modal-close" style="position:fixed;top:20px;right:20px;z-index:10000;background:white;" onclick="closeCalendly()">✕</button>
+    <button class="modal-close" style="position:fixed;top:20px;right:20px;z-index:10000;background:white;" onclick="closeCalendly()">&#10005;</button>
     <div id="calendlyInline" style="min-width:320px;height:700px;border-radius:var(--radius-lg);overflow:hidden;"></div>
   </div>
 </div>
@@ -437,7 +573,7 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
 <!-- AUDIT / GET STARTED MODAL -->
 <div class="modal-overlay" id="auditModal" onclick="closeAuditOutside(event)">
   <div class="modal" style="max-width:520px;">
-    <button class="modal-close" onclick="closeAudit()">✕</button>
+    <button class="modal-close" onclick="closeAudit()">&#10005;</button>
     <div id="auditFormWrap">
       <h3>Let's Thriiv.</h3>
       <p>Share your details and our local team will get back to you within the day.</p>
@@ -461,7 +597,7 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
           </div>
         </div>
         <input type="hidden" id="af-package" value="" />
-        <button class="form-submit-btn" onclick="submitAudit()">Get Started →</button>
+        <button class="form-submit-btn" onclick="submitAudit()">Get Started &rarr;</button>
         <!-- Honeypot — do not remove -->
         <div class="hp-field" aria-hidden="true"><label for="af-hp">Leave this blank</label><input type="text" id="af-hp" name="af-hp" autocomplete="off" tabindex="-1"></div>
       </div>
@@ -469,7 +605,7 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
     <div id="auditSuccess" style="display:none;text-align:center;padding:40px 20px;">
       <div style="margin-bottom:16px;display:flex;justify-content:center;"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
       <h3 style="margin-bottom:8px;">You're on the list!</h3>
-      <p style="color:var(--text-mid);">We'll be straight back to you — usually within a business day.</p>
+      <p style="color:var(--text-mid);">We'll be straight back to you &mdash; usually within a business day.</p>
     </div>
   </div>
 </div>
@@ -477,7 +613,7 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
 <!-- FREE HEALTH CHECK MODAL -->
 <div class="modal-overlay" id="healthCheckModal" onclick="closeHealthCheckOutside(event)">
   <div class="modal" style="max-width:520px;">
-    <button class="modal-close" onclick="closeHealthCheck()">✕</button>
+    <button class="modal-close" onclick="closeHealthCheck()">&#10005;</button>
     <div id="healthCheckFormWrap">
       <h3>Get Your Free Health Check</h3>
       <p>No obligation. No sales pressure. We'll be in touch shortly.</p>
@@ -487,7 +623,7 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
         <div class="fg"><label>Email Address *</label><input type="email" id="hc-email" placeholder="james@smithplumbing.com.au" /></div>
         <div class="fg"><label>Mobile *</label><input type="tel" id="hc-phone" placeholder="0400 000 000" /></div>
         <div class="fg"><label>Website URL *</label><input type="url" id="hc-url" placeholder="https://yourwebsite.com.au" /></div>
-        <button class="form-submit-btn" onclick="submitHealthCheck()">Get My Free Health Check →</button>
+        <button class="form-submit-btn" onclick="submitHealthCheck()">Get My Free Health Check &rarr;</button>
         <!-- Honeypot — do not remove -->
         <div class="hp-field" aria-hidden="true"><label for="hc-hp">Leave this blank</label><input type="text" id="hc-hp" name="hc-hp" autocomplete="off" tabindex="-1"></div>
       </div>
@@ -495,7 +631,7 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
     <div id="healthCheckSuccess" style="display:none;text-align:center;padding:40px 20px;">
       <div style="margin-bottom:16px;display:flex;justify-content:center;"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
       <h3 style="margin-bottom:8px;">You're booked in!</h3>
-      <p style="color:var(--text-mid);">We'll be straight back to you — usually within a business day.</p>
+      <p style="color:var(--text-mid);">We'll be straight back to you &mdash; usually within a business day.</p>
     </div>
   </div>
 </div>
@@ -503,7 +639,7 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
 <!-- QUESTION MODAL -->
 <div class="modal-overlay" id="questionModal" onclick="closeQuestionOutside(event)">
   <div class="modal" style="max-width:520px;">
-    <button class="modal-close" onclick="closeQuestion()">✕</button>
+    <button class="modal-close" onclick="closeQuestion()">&#10005;</button>
     <div id="questionFormWrap">
       <h3>Got a question?</h3>
       <p>Send us your question and we'll get back to you shortly.</p>
@@ -515,14 +651,14 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
         <div class="fg"><label>Email Address *</label><input type="email" id="qf-email" placeholder="james@smithplumbing.com.au" /></div>
         <div class="fg"><label>Phone <span style="font-weight:400;color:var(--text-light)">(optional)</span></label><input type="tel" id="qf-phone" placeholder="0400 000 000" /></div>
         <div class="fg"><label>Your Question *</label><textarea id="qf-message" placeholder="What would you like to know?" style="resize:vertical;min-height:100px;"></textarea></div>
-        <button class="form-submit-btn" onclick="submitQuestion()">Send My Question →</button>
+        <button class="form-submit-btn" onclick="submitQuestion()">Send My Question &rarr;</button>
         <!-- Honeypot — do not remove -->
         <div class="hp-field" aria-hidden="true"><label for="qf-hp">Leave this blank</label><input type="text" id="qf-hp" name="qf-hp" autocomplete="off" tabindex="-1"></div>
       </div>
     </div>
     <div id="questionSuccess" style="display:none;text-align:center;padding:40px 20px;">
       <div style="margin-bottom:16px;display:flex;justify-content:center;"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
-      <h3 style="margin-bottom:8px;">Got it — thanks!</h3>
+      <h3 style="margin-bottom:8px;">Got it &mdash; thanks!</h3>
       <p style="color:var(--text-mid);">We'll be straight back to you.</p>
     </div>
   </div>
@@ -588,12 +724,12 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
 
     const auditPayload = {
       firstName: fname, businessName: biz, email: email, phone: phone, websiteUrl: url,
-      problem: problems, packageInterest: packageInterest, source: 'thank-you-question'
+      problem: problems, packageInterest: packageInterest, source: 'page-contact'
     };
 
     fetch('https://formspree.io/f/xdarvlpd', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(auditPayload), keepalive: true }).catch(()=>{});
     fetch('https://hook.eu1.make.com/0njfs4y7hacxefcw1dn9prsdeqkbbr2l', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(auditPayload), keepalive: true }).catch(()=>{});
-    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', { content_name: 'Free Website Audit', content_category: 'thank-you-question' }); }
+    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', { content_name: 'Free Website Audit', content_category: 'page-contact' }); }
 
     setTimeout(() => { window.location.href = '/thank-you-audit/'; }, 1500);
   }
@@ -612,11 +748,11 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
     const btn = document.querySelector('#healthCheckFormWrap .form-submit-btn');
     btn.textContent = 'Sending...'; btn.classList.add('loading');
 
-    const healthCheckPayload = { firstName: fname, businessName: biz, email: email, phone: phone, websiteUrl: url, source: 'thank-you-question-healthcheck' };
+    const healthCheckPayload = { firstName: fname, businessName: biz, email: email, phone: phone, websiteUrl: url, source: 'page-contact-healthcheck' };
 
     fetch('https://formspree.io/f/mlgykwoo', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(healthCheckPayload), keepalive: true }).catch(()=>{});
     fetch('https://hook.eu1.make.com/0njfs4y7hacxefcw1dn9prsdeqkbbr2l', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(healthCheckPayload), keepalive: true }).catch(()=>{});
-    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', { content_name: 'Free Health Check', content_category: 'thank-you-question' }); }
+    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', { content_name: 'Free Health Check', content_category: 'page-contact' }); }
 
     setTimeout(() => { window.location.href = '/thank-you-healthcheck/'; }, 1500);
   }
@@ -636,14 +772,43 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
     const qPayload = {
       name: name, businessName: document.getElementById('qf-biz').value.trim(),
       email: email, phone: document.getElementById('qf-phone').value.trim(),
-      message: msg, source: 'thank-you-question'
+      message: msg, source: 'page-contact'
     };
 
     fetch('https://formspree.io/f/mykqadbl', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(qPayload), keepalive: true }).catch(()=>{});
     fetch('https://hook.eu1.make.com/ia4sfvcak8fnlpd9fgp9vtmhwv41e8xq', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(qPayload), keepalive: true }).catch(()=>{});
-    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', { content_name: 'Got a Question', content_category: 'thank-you-question' }); }
+    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', { content_name: 'Got a Question', content_category: 'page-contact' }); }
 
     setTimeout(() => { window.location.href = '/thank-you-question/'; }, 1500);
+  }
+
+  // ── MAIN CONTACT FORM (on-page) ──
+  function submitContact() {
+    if (document.getElementById('cf-hp').value !== '') { setTimeout(() => { window.location.href = '/thank-you-contact/'; }, 1500); return; }
+    const fname = document.getElementById('cf-fname').value.trim();
+    const biz = document.getElementById('cf-biz').value.trim();
+    const email = document.getElementById('cf-email').value.trim();
+    const phone = document.getElementById('cf-phone').value.trim();
+    const url = document.getElementById('cf-url').value.trim();
+    if (!fname || !biz || !email || !phone) {
+      alert('Please fill in all required fields.');
+      return;
+    }
+    const btn = document.querySelector('#contactFormWrap .form-submit-btn');
+    btn.textContent = 'Sending...'; btn.classList.add('loading');
+
+    const problems = Array.from(document.querySelectorAll('input[name="cf-problem"]:checked')).map(cb => cb.value).join('; ');
+
+    const contactPayload = {
+      firstName: fname, businessName: biz, email: email, phone: phone, websiteUrl: url,
+      problem: problems, source: 'page-contact'
+    };
+
+    fetch('https://formspree.io/f/mgoglrpk', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(contactPayload), keepalive: true }).catch(()=>{});
+    fetch('https://hook.eu1.make.com/0njfs4y7hacxefcw1dn9prsdeqkbbr2l', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(contactPayload), keepalive: true }).catch(()=>{});
+    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', { content_name: 'Contact Page Form', content_category: 'page-contact' }); }
+
+    setTimeout(() => { window.location.href = '/thank-you-contact/'; }, 1500);
   }
 
   let calendlyLoaded = false;
