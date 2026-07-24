@@ -141,6 +141,19 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
   .logo-img { height:52px; width:auto; max-width:140px; object-fit:contain; opacity:0.85; filter:none; transition:opacity 0.2s; }
   .logo-img:hover { opacity:1; }
 
+  /* STATS / WHY IT MATTERS */
+  .stats-section { padding:70px 24px 88px; }
+  .stats-intro { max-width:720px; margin:0 auto 48px; text-align:center; font-size:17px; color:var(--text-mid); line-height:1.75; }
+  .stats-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+  @media (max-width:860px) { .stats-grid { grid-template-columns:1fr; } }
+  .stat-card { background:var(--white); border:1px solid var(--mid-grey); border-radius:var(--radius-lg); padding:36px 28px; text-align:center; transition:box-shadow 0.2s,transform 0.2s; }
+  .stat-card:hover { box-shadow:var(--shadow-md); transform:translateY(-4px); }
+  .stat-num { font-family:'Sora',sans-serif; font-weight:800; font-size:44px; color:var(--teal); letter-spacing:-1px; line-height:1; margin-bottom:16px; }
+  .stat-desc { font-size:15px; color:var(--text-dark); line-height:1.6; font-weight:500; margin-bottom:14px; }
+  .stat-source { font-size:12px; color:var(--text-light); font-style:italic; }
+  .stats-callout { max-width:780px; margin:48px auto 0; background:var(--teal-mist); border-left:4px solid var(--teal); border-radius:var(--radius); padding:24px 28px; text-align:left; font-size:16px; color:var(--text-dark); line-height:1.7; }
+  .stats-callout strong { color:var(--black); }
+
   /* SECTIONS */
   .section { padding:88px 24px; }
   .section-teal { background:var(--teal); }
@@ -650,6 +663,33 @@ src="https://www.facebook.com/tr?id=1647935813463644&ev=PageView&noscript=1"
     </div>
   </div>
 </div>
+
+<!-- STATS / WHY IT MATTERS -->
+<section class="stats-section">
+  <div class="container">
+    <p class="stats-intro fade-up">First impressions happen fast, and on the web they happen even faster. Before we talk about what a great website should look like, it's worth looking at what the data says about what a poor one actually costs you.</p>
+    <div class="stats-grid">
+      <div class="stat-card fade-up">
+        <div class="stat-num">40%</div>
+        <p class="stat-desc">of Australian consumers will <strong>not</strong> engage a business that does not have a website.</p>
+        <div class="stat-source">Source: .au Domain Administration (auDA) Consumer Survey</div>
+      </div>
+      <div class="stat-card fade-up fade-up-delay-1">
+        <div class="stat-num">88%</div>
+        <p class="stat-desc">of consumers state they are highly unlikely to ever return to a website after a single poor user experience (UX).</p>
+        <div class="stat-source">Source: Adobe Digital Trends / FullStory</div>
+      </div>
+      <div class="stat-card fade-up fade-up-delay-2">
+        <div class="stat-num">50%</div>
+        <p class="stat-desc">of businesses lose prospective clients purely because of an outdated website design layout.</p>
+        <div class="stat-source">Source: Marketing LTB Expert Analysis</div>
+      </div>
+    </div>
+    <div class="stats-callout fade-up">
+      <strong>Are you surprised?</strong> You could be actively turning people away. If your site is slow, hard to navigate on a phone, or looks like it hasn't been updated since 2018, you are handing leads directly to your competitors.
+    </div>
+  </div>
+</section>
 
 <!-- THE HARD TRUTH -->
 <section class="section section-teal">
